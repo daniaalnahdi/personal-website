@@ -10,7 +10,7 @@ section {
 
 .sections-wrapper {
     .container:first-of-type > section {
-        margin-top: 2em;
+        margin-top: 1em;
     }
 
     .container:nth-of-type(2) > section {
@@ -19,21 +19,23 @@ section {
     }
 
     .container:nth-of-type(3) > section {
-       padding-top: 2em;
+        padding-top: 2em;
     }
-
 
     .container:last-of-type > section {
         padding-top: 0;
-        
     }
 
     @media ($md-screen) {
-        .container:nth-of-type(2) > section{
+        .container:first-of-type > section {
+            margin-top: 2em;
+        }
+
+        .container:nth-of-type(2) > section {
             padding: 2em 3em;
         }
 
-        .container:nth-of-type(3){
+        .container:nth-of-type(3) {
             padding: 2em 3em;
             padding-top: 5em;
         }
@@ -44,11 +46,17 @@ section {
     }
 
     #intro-section-img {
-        @include img($md-img);
+        @include img($sm-img);
     }
 
     #contact-section-img {
         @include img($xs-img);
+    }
+
+    @media ($sm-screen) {
+        #intro-section-img {
+            @include img($md-img);
+        }
     }
 
     @media ($md-screen) { /*Medium Screens*/
@@ -56,7 +64,6 @@ section {
         .container:first-of-type > section, .container:last-of-type > section {
             padding-left: 5em;
             padding-right: 5em;
-
         }
 
         .container:first-of-type > section {
@@ -86,7 +93,6 @@ section {
             padding-left: 7em;
             padding-right: 7em;
         }
-
     }
 }
 

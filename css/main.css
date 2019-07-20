@@ -448,14 +448,16 @@ body {
   font-family: "Work Sans";
   color: #3A3A3A; }
 
-h3 {
-  padding-left: 3em;
-  padding-right: 3em;
-  line-height: 1.5em; }
-
 h1, h2 {
   font-family: "Gotham Rounded Medium"; }
 
+h3 {
+  line-height: 1.5em; }
+
+@media (min-width: 768px) {
+  h3 {
+    padding-left: 3em;
+    padding-right: 3em; } }
 h3, h4 {
   font-family: "Gotham Rounded Book"; }
 
@@ -704,7 +706,7 @@ section {
   flex-direction: column; }
 
 .sections-wrapper .container:first-of-type > section {
-  margin-top: 2em; }
+  margin-top: 1em; }
 .sections-wrapper .container:nth-of-type(2) > section {
   padding-top: 2em;
   padding-bottom: 4em; }
@@ -713,6 +715,8 @@ section {
 .sections-wrapper .container:last-of-type > section {
   padding-top: 0; }
 @media (min-width: 992px) {
+  .sections-wrapper .container:first-of-type > section {
+    margin-top: 2em; }
   .sections-wrapper .container:nth-of-type(2) > section {
     padding: 2em 3em; }
   .sections-wrapper .container:nth-of-type(3) {
@@ -721,7 +725,7 @@ section {
 .sections-wrapper .container:first-of-type > section, .sections-wrapper .container:last-of-type > section {
   align-items: center; }
 .sections-wrapper #intro-section-img {
-  width: 16em;
+  width: 15em;
   margin: 1.5em;
   margin-top: 0;
   -webkit-touch-callout: none;
@@ -748,6 +752,21 @@ section {
   /* Currently not supported in Opera but will be soon */
   -o-user-select: none;
   user-select: none; }
+@media (min-width: 768px) {
+  .sections-wrapper #intro-section-img {
+    width: 20em;
+    margin: 1.5em;
+    margin-top: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    /* Webkit */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE 10  */
+    /* Currently not supported in Opera but will be soon */
+    -o-user-select: none;
+    user-select: none; } }
 @media (min-width: 992px) {
   .sections-wrapper {
     /*Medium Screens*/ }
@@ -921,24 +940,19 @@ section {
   display: grid;
   grid-gap: 2em;
   margin: 2em 1em; }
-
-@media (max-width: 767px) {
   .info-grid li {
-    padding-left: 2em;
-    padding-right: 2em; } }
+    padding-left: 0;
+    padding-right: 0; }
+
 @media (min-width: 768px) {
   .info-grid {
-    grid-template-columns: 1fr 1fr; }
-
-  li {
-    padding-left: 0;
-    padding-right: 0; } }
+    grid-template-columns: 1fr 1fr; } }
 @media (min-width: 992px) {
   .info-grid {
     grid-template-columns: 1fr 1fr 1fr; } }
 .info-card {
   background: #fefefe;
-  height: 24.5em;
+  height: 27em;
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
