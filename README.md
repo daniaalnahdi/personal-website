@@ -1,2 +1,2 @@
 # daniaalnahdi.com
-Personal website.
+Portfolio website.
