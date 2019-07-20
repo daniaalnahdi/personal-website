@@ -3,6 +3,7 @@
 /* General Functions */
 const generalFunctions = {
     body: document.querySelector("body"),
+    sideNav: document.querySelector("aside"),
 
     // Returns true if mobile screen
     isMobile: () => {
@@ -66,7 +67,7 @@ const navFunctions = {
                 navFunctions.bar.classList.remove("slide-out");
                 navFunctions.sideNav.classList.remove("show-links");
                 navFunctions.hideBar(400);
-                generalFunctions.enableScroll();
+                //generalFunctions.enableScroll();
             }, 300);
 
         } else {
@@ -81,7 +82,7 @@ const navFunctions = {
             navFunctions.icon.classList.add("cross");
             navFunctions.bar.classList.add("slide-out", "show-bar");
             navFunctions.sideNav.classList.add("show-links");
-            generalFunctions.disableScroll();
+            //generalFunctions.disableScroll();
 
         }
     },
@@ -119,10 +120,18 @@ const navFunctions = {
             if (currPos == 0) { // Reset to original at top
                 navFunctions.bar.classList.remove("show-bar", "hide-bar");
             } else if (currPos > navFunctions.scrollPos) { // Scrolling down
-                navFunctions.hideBar(200); // hide
+
+                if (generalFunctions.isMobile() && navFunctions.icon.classList.contains("cross")) { //if side nav is open
+                    navFunctions.toggleNav(); //collapse nav
+                } else {
+                    navFunctions.hideBar(200); // hide
+                }
+
             } else { // Scrolling up
+
                 navFunctions.bar.classList.add("show-bar"); // show
                 navFunctions.bar.classList.remove("hide-bar");
+
             }
             navFunctions.scrollPos = currPos;
         }
