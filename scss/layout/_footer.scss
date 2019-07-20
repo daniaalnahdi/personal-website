@@ -1,0 +1,29 @@
+/* Start Footer */
+
+footer {
+
+    background: $shadow;
+
+    div {
+        padding: 1em;
+        text-align: center;
+        font-size: 0.8rem;
+        color: $secondary;
+
+    }
+
+    ul { /* Social Media */
+        display: flex;
+        justify-content: center;
+        padding: 0.5em;
+    }
+
+    li {
+        padding: 1em;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+}
+
+
+/* End Footer */

@@ -1,0 +1,64 @@
+/* Start Typography */
+
+body {
+    font-family: $body-font;
+    color: $primary;
+}
+
+h3 {
+    padding-left: 3em;
+    padding-right: 3em;
+    line-height: 1.5em;
+}
+
+h1, h2 {
+    font-family: $h-font;
+}
+
+h3, h4{
+    font-family: $sm-h-font;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h2, h3, h4 {
+    text-transform: lowercase;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+
+}
+
+a {
+    color: $accent-dark;
+    @include transition(0.3);
+}
+
+a:hover{
+    color: $accent-light;
+}
+
+.a-underline{
+    margin-bottom: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-bottom: 1.5px solid $accent-light;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.no-lowercase {
+    text-transform: none;
+}
+
+
+/* End Typography */
+
+
+
