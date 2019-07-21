@@ -445,7 +445,7 @@ button:hover {
 /* End States */
 /* Start Typography */
 body {
-  font-family: "'Work Sans', sans-serif";
+  font-family: "Work Sans", sans-serif;
   color: #3A3A3A; }
 
 h1, h2 {
