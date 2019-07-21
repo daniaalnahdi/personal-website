@@ -445,11 +445,11 @@ button:hover {
 /* End States */
 /* Start Typography */
 body {
-  font-family: "Work Sans";
+  font-family: "'Work Sans', sans-serif";
   color: #3A3A3A; }
 
 h1, h2 {
-  font-family: "Gotham Rounded Medium"; }
+  font-family: "Gotham Rounded Medium", sans-serif; }
 
 h3 {
   line-height: 1.5em; }
@@ -459,7 +459,7 @@ h3 {
     padding-left: 3em;
     padding-right: 3em; } }
 h3, h4 {
-  font-family: "Gotham Rounded Book"; }
+  font-family: "Gotham Rounded Book", sans-serif; }
 
 h1, h3 {
   text-align: center; }
@@ -674,7 +674,8 @@ aside {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.17); }
 
 .disable-scroll {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 /* End Mobile Navigation Navigation */
 /* End Navigation */
