@@ -11,7 +11,6 @@ nav {
     z-index: 999;
     background-color: $bg-color;
 
-
     @include transition(0.35);
 
     .container { /*Contents inside of nav*/
@@ -74,8 +73,8 @@ nav {
             display: block;
             opacity: 0;
             transition: opacity 0.4s;
-            @include remove-selection;
 
+            @include remove-selection;
         }
 
         .nav-underline-highlighted {
@@ -90,8 +89,6 @@ nav {
             margin-right: 1.5em;
             margin-top: -1px;
         }
-
-
     }
 }
 
@@ -196,13 +193,13 @@ aside {
     height: 100% !important;
     background: $shadow;
 
-
     @include shadow;
 }
 
 .disable-scroll {
     overflow: hidden;
     position: relative;
+    height: 100%;
 }
 
 /* End Mobile Navigation Navigation */

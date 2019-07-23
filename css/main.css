@@ -675,7 +675,8 @@ aside {
 
 .disable-scroll {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 /* End Mobile Navigation Navigation */
 /* End Navigation */
@@ -815,6 +816,9 @@ section {
     .sections-wrapper .container:first-of-type > section {
       padding-left: 7em;
       padding-right: 7em; } }
+
+.break {
+  flex-grow: 1; }
 
 /* End Page Sections */
 /* Start Text Containers */

@@ -2,6 +2,7 @@
 
 /* General Functions */
 const generalFunctions = {
+    html: document.querySelector("html"),
     body: document.querySelector("body"),
     sideNav: document.querySelector("aside"),
 
@@ -13,11 +14,15 @@ const generalFunctions = {
     // Disables scrolling 
     disableScroll: () => {
         generalFunctions.body.classList.add("disable-scroll");
+        generalFunctions.html.classList.add("disable-scroll");
+
     },
 
     // Enables scrolling
     enableScroll: () => {
         generalFunctions.body.classList.remove("disable-scroll");
+        generalFunctions.html.classList.remove("disable-scroll");
+
     },
 
     // Limits invocation of function
@@ -67,7 +72,7 @@ const navFunctions = {
                 navFunctions.bar.classList.remove("slide-out");
                 navFunctions.sideNav.classList.remove("show-links");
                 navFunctions.hideBar(400);
-                //generalFunctions.enableScroll();
+                generalFunctions.enableScroll();
             }, 300);
 
         } else {
@@ -82,7 +87,7 @@ const navFunctions = {
             navFunctions.icon.classList.add("cross");
             navFunctions.bar.classList.add("slide-out", "show-bar");
             navFunctions.sideNav.classList.add("show-links");
-            //generalFunctions.disableScroll();
+            generalFunctions.disableScroll();
 
         }
     },
@@ -121,11 +126,11 @@ const navFunctions = {
                 navFunctions.bar.classList.remove("show-bar", "hide-bar");
             } else if (currPos > navFunctions.scrollPos) { // Scrolling down
 
-                if (generalFunctions.isMobile() && navFunctions.icon.classList.contains("cross")) { //if side nav is open
-                    navFunctions.toggleNav(); //collapse nav
-                } else {
+                // if (generalFunctions.isMobile() && navFunctions.icon.classList.contains("cross")) { //if side nav is open
+                //     navFunctions.toggleNav(); //collapse nav
+                // } else {
                     navFunctions.hideBar(200); // hide
-                }
+                //}
 
             } else { // Scrolling up
 
