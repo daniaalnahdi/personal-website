@@ -444,6 +444,9 @@ button:hover {
 
 /* End States */
 /* Start Typography */
+html, body {
+  text-rendering: geometricPrecision; }
+
 body {
   font-family: "Work Sans", sans-serif;
   color: #3A3A3A; }
