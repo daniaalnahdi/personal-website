@@ -54,6 +54,7 @@ const navFunctions = {
     // Opens and closes mobile navigation
     toggleNav: () => {
 
+
         if (navFunctions.scrollPos == 0) { // style bar at top
             navFunctions.bar.classList.remove("show-bar");
         }
@@ -72,7 +73,7 @@ const navFunctions = {
                 navFunctions.bar.classList.remove("slide-out");
                 navFunctions.sideNav.classList.remove("show-links");
                 navFunctions.hideBar(400);
-                generalFunctions.enableScroll();
+                //generalFunctions.enableScroll();
             }, 300);
 
         } else {
@@ -87,7 +88,7 @@ const navFunctions = {
             navFunctions.icon.classList.add("cross");
             navFunctions.bar.classList.add("slide-out", "show-bar");
             navFunctions.sideNav.classList.add("show-links");
-            generalFunctions.disableScroll();
+            //generalFunctions.disableScroll();
 
         }
     },
@@ -129,7 +130,7 @@ const navFunctions = {
                 // if (generalFunctions.isMobile() && navFunctions.icon.classList.contains("cross")) { //if side nav is open
                 //     navFunctions.toggleNav(); //collapse nav
                 // } else {
-                    navFunctions.hideBar(200); // hide
+                navFunctions.hideBar(200); // hide
                 //}
 
             } else { // Scrolling up
