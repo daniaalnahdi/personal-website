@@ -13,11 +13,19 @@
     transition: opacity 0.4s;
 }
 
+.scale {
+    transform: scale(1.03);
+    filter: opacity(1);
+
+    @include transition(1);
+}
+
+.fade {
+    filter: opacity(0.4);
+}
+
 #nav-h {
     transition: opacity 0.4s;
 }
-
-
-
 
 /* End States */

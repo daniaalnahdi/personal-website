@@ -2,7 +2,7 @@
 
 .info-grid {
     display: grid;
-    grid-gap: 2em;
+    grid-gap: 2.5em;
     margin: 2em 1em;
 
     li {
@@ -138,10 +138,6 @@
             }
         }
     }
-}
-
-.info-card:hover {
-    transform: scale(1.02);
 }
 
 /* Start Information UI Cards */

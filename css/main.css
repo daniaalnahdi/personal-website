@@ -439,6 +439,15 @@ button:hover {
   opacity: 0.0;
   transition: opacity 0.4s; }
 
+.scale {
+  transform: scale(1.03);
+  filter: opacity(1);
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out; }
+
+.fade {
+  filter: opacity(0.4); }
+
 #nav-h {
   transition: opacity 0.4s; }
 
@@ -939,14 +948,12 @@ section {
     font-size: 1.5rem;
     color: #ffffff;
     text-align: center; }
-  .list-card img {
-    width: 5em; }
 
 /* End List UI Cards */
 /* Start Information UI Cards */
 .info-grid {
   display: grid;
-  grid-gap: 2em;
+  grid-gap: 2.5em;
   margin: 2em 1em; }
   .info-grid li {
     padding-left: 0;
@@ -1030,9 +1037,6 @@ section {
     font-size: 0.85rem; }
   .info-card .info-footer p {
     font-size: 0.7rem; } }
-.info-card:hover {
-  transform: scale(1.02); }
-
 /* Start Information UI Cards */
 
 /*# sourceMappingURL=main.css.map */

@@ -145,7 +145,7 @@ const navFunctions = {
     },
 
     // Sets up event listeners
-    setUp: function () {
+    setUp: () => {
         navFunctions.icon.addEventListener('click', navFunctions.toggleNav);
         window.addEventListener('resize', navFunctions.closeNav);
         window.addEventListener('scroll', generalFunctions.debounce(navFunctions.toggleBar));
@@ -206,7 +206,7 @@ const linkFunctions = {
 
     },
 
-    setUp: function () {
+    setUp: () => {
         // Get section positions to scroll to
         for (i = 0; i < linkFunctions.sections.length - 1; i++) {
             const s = linkFunctions.sections[i + 1] //ignores first section
@@ -232,6 +232,7 @@ const linkFunctions = {
 /* Transition Functions */
 const transitionFunctions = {
     elements: document.querySelectorAll(".fade-in"),
+    cards: document.querySelectorAll(".info-card"),
 
     // Reveals elements as they are being scrolled to 
     revealElements: () => {
@@ -251,16 +252,38 @@ const transitionFunctions = {
         });
     },
 
+    // Scales cards as they are being scrolled to 
+    scaleCards: () => {
+
+        transitionFunctions.cards.forEach(card => {
+            // half way through the card
+            const offSet = 100;
+            const scaleAt = ((window.scrollY + window.innerHeight) - card.offsetHeight / 2) - offSet - 50;
+            // bottom of the element
+            const elementBottom = card.offsetTop + (card.offsetHeight / 2) - offSet;
+            const isHalfShown = scaleAt > card.offsetTop;
+            const isNotScrolledPast = window.scrollY < elementBottom;
+            if (isHalfShown && isNotScrolledPast) {
+                card.classList.add("scale");
+                card.classList.remove("fade");
+            } else {
+                card.classList.remove("scale");
+                card.classList.add("fade");
+            }
+        });
+    },
+
     //Reveals first element without prompting user to scroll
     revealFirstElement: () => {
         transitionFunctions.elements[0].classList.add("reveal");
     },
 
-    setUp: function () {
+    setUp: () => {
         window.addEventListener("scroll", generalFunctions.debounce(transitionFunctions.revealElements));
-        window.addEventListener("DOMContentLoaded", (transitionFunctions.revealFirstElement));
+        window.addEventListener("scroll", generalFunctions.debounce(transitionFunctions.scaleCards));
         window.addEventListener("resize", generalFunctions.debounce(transitionFunctions.revealElements));
-
+        window.addEventListener("resize", generalFunctions.debounce(transitionFunctions.scaleCards));
+        window.addEventListener("DOMContentLoaded", (transitionFunctions.revealFirstElement));
 
     }
 
