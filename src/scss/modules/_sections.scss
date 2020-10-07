@@ -1,102 +1,103 @@
 /* Start Page Sections */
 
 section {
-    min-height: 100vh;
-    padding: 1em 1em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  min-height: 100vh;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sections-wrapper {
+  .container:first-of-type > section {
+    margin-top: 1em;
+  }
+
+  .container:nth-of-type(2) > section {
+    padding-top: 2em;
+    padding-bottom: 4em;
+  }
+
+  .container:nth-of-type(3) > section {
+    padding-top: 2em;
+  }
+
+  .container:last-of-type > section {
+    padding-top: 0;
+  }
+
+  @media ($md-screen) {
     .container:first-of-type > section {
-        margin-top: 1em;
+      margin-top: 2em;
     }
 
     .container:nth-of-type(2) > section {
-        padding-top: 2em;
-        padding-bottom: 4em;
+      padding: 2em 3em;
     }
 
-    .container:nth-of-type(3) > section {
-        padding-top: 2em;
+    .container:nth-of-type(3) {
+      padding: 2em 3em;
+      padding-top: 5em;
     }
+  }
 
+  .container:first-of-type > section,
+  .container:last-of-type > section {
+    align-items: center;
+  }
+
+  #intro-section-img {
+    @include section-img($intro-img, $sm-img);
+  }
+
+  #contact-section-img {
+    @include section-img($contact-img, $xs-img);
+  }
+
+  @media ($sm-screen) {
+    #intro-section-img {
+      @include section-img($intro-img, $md-img);
+    }
+  }
+
+  @media ($md-screen) {
+    /*Medium Screens*/
+
+    .container:first-of-type > section,
     .container:last-of-type > section {
-        padding-top: 0;
+      padding-left: 5em;
+      padding-right: 5em;
     }
 
-    @media ($md-screen) {
-        .container:first-of-type > section {
-            margin-top: 2em;
-        }
-
-        .container:nth-of-type(2) > section {
-            padding: 2em 3em;
-        }
-
-        .container:nth-of-type(3) {
-            padding: 2em 3em;
-            padding-top: 5em;
-        }
-    }
-
-    .container:first-of-type > section, .container:last-of-type > section {
-        align-items: center;
+    .container:first-of-type > section {
+      justify-content: space-around;
+      flex-direction: row-reverse;
+      text-align: left;
     }
 
     #intro-section-img {
-        @include section-img($intro-img, $sm-img);
+      @include section-img($intro-img, $lg-img);
+      margin: 0;
     }
 
     #contact-section-img {
-        @include section-img($contact-img, $xs-img);
+      @include section-img($contact-img, $sm-img);
+    }
+  }
+
+  @media ($lg-screen) {
+    /*Large Screens*/
+
+    .container:first-of-type > section,
+    .container:last-of-type > section {
+      padding: 0em;
     }
 
-    @media ($sm-screen) {
-        #intro-section-img {
-            @include section-img($intro-img, $md-img);
-        }
+    .container:first-of-type > section {
+      padding-left: 7em;
+      padding-right: 7em;
     }
-
-    @media ($md-screen) { /*Medium Screens*/
-
-        .container:first-of-type > section, .container:last-of-type > section {
-            padding-left: 5em;
-            padding-right: 5em;
-        }
-
-        .container:first-of-type > section {
-            justify-content: space-around;
-            flex-direction: row-reverse;
-            text-align: left;
-        }
-
-        #intro-section-img {
-            @include section-img($intro-img, $lg-img);
-            margin: 0;
-        }
-
-        #contact-section-img {
-            @include section-img($contact-img, $sm-img);
-        }
-    }
-
-    @media ($lg-screen) { /*Large Screens*/
-
-        .container:first-of-type > section, .container:last-of-type > section {
-            padding: 0em;
-        }
-
-        .container:first-of-type > section {
-            padding-left: 7em;
-            padding-right: 7em;
-        }
-    }
-}
-
-.break {
-    flex-grow: 1;
+  }
 }
 
 /* End Page Sections */
