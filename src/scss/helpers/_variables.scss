@@ -1,0 +1,36 @@
+/* Start Variables */
+
+$xs: 767; /* Screen Sizes */
+$sm: 768;
+$md: 992;
+$lg: 1200;
+
+$xs-screen: 'max-width: ' + $xs + 'px'; /* Breakpoints */
+$sm-screen: 'min-width: ' + $sm + 'px';
+$md-screen: 'min-width: ' + $md + 'px';
+$lg-screen: 'min-width: ' + $lg + 'px';
+
+$body-font: 'Work Sans';
+$sm-h-font: 'Gotham Rounded Book';
+$h-font: 'Gotham Rounded Medium';
+
+$lg-img: 25em;
+$md-img: 20em;
+$sm-img: 15em;
+$xs-img: 13em;
+
+$bg-color: #ffffff; /* Background Colors */
+$fg-color: #fefefe;
+$shadow: #f5f5f5;
+
+$accent-light: #87aaad; /* Accent Colors */
+$accent-dark: #4c7679;
+
+$primary: #3a3a3a; /* Text Colors */
+$secondary: #8d8d8d;
+
+$underline-img: '../../../public/images/underline.svg'; /* Images */
+$intro-img: '../../../public/images/intro.svg';
+$contact-img: '../../../public/images/contact.svg';
+
+/* End Variables */

@@ -9,7 +9,6 @@
 }
 
 @media ($md-screen) { /*Medium Screens*/
-
     .list-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -21,8 +20,7 @@
     align-items: center;
     margin-top: 2em;
     transition: all 0.3s;
-
-    @include default-cursor;
+    cursor: default;
 
     ul {
         padding: 1em;
@@ -53,14 +51,6 @@
         color: $bg-color;
         text-align: center;
     }
-
-    //img {
-    //    width: 5em;
-    //}
 }
-
-//.list-card:hover {
-    //transform: scale(1.035);
-//}
 
 /* End List UI Cards */

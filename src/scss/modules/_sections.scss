@@ -46,16 +46,16 @@ section {
     }
 
     #intro-section-img {
-        @include img($sm-img);
+        @include section-img($intro-img, $sm-img);
     }
 
     #contact-section-img {
-        @include img($xs-img);
+        @include section-img($contact-img, $xs-img);
     }
 
     @media ($sm-screen) {
         #intro-section-img {
-            @include img($md-img);
+            @include section-img($intro-img, $md-img);
         }
     }
 
@@ -73,13 +73,12 @@ section {
         }
 
         #intro-section-img {
-            @include img($lg-img);
-
+            @include section-img($intro-img, $lg-img);
             margin: 0;
         }
 
         #contact-section-img {
-            @include img($sm-img);
+            @include section-img($contact-img, $sm-img);
         }
     }
 
