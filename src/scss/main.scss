@@ -1,23 +1,23 @@
 // Helpers
-@import "helpers/typefaces";
-@import "helpers/variables";
-@import "helpers/mixins";
+@import 'helpers/typefaces';
+@import 'helpers/variables';
+@import 'helpers/mixins';
 
 // Base
-@import "base/normalize";
-@import "base/reset";
-@import "base/breakpoints";
+@import 'base/normalize';
+@import 'base/reset';
+@import 'base/breakpoints';
 
 // Layout
-@import "layout/general";
-@import "layout/states";
-@import "layout/typography";
-@import "layout/container";
-@import "layout/navigation";
-@import "layout/footer";
+@import 'layout/general';
+@import 'layout/states';
+@import 'layout/typography';
+@import 'layout/container';
+@import 'layout/navigation';
+@import 'layout/footer';
 
 // Components
-@import "modules/sections";
-@import "modules/text-containers";
-@import "modules/list-card";
-@import "modules/info-card";
+@import 'modules/sections';
+@import 'modules/text-containers';
+@import 'modules/list-card';
+@import 'modules/info-card';

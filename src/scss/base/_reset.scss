@@ -1,30 +1,33 @@
 /* Start Resets */
 
-* { /* Universal Resets */
-    box-sizing: inherit; /* Reset Border Box */
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+* {
+  /* Universal Resets */
+  box-sizing: inherit; /* Reset Border Box */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 
-    padding: 0; /* Reset Margins/Padding */
-    margin: 0;
-
+  padding: 0; /* Reset Margins/Padding */
+  margin: 0;
 }
 
-html { 
-    scroll-behavior: smooth /* Scrolling */
-
+html {
+  scroll-behavior: smooth; /* Scrolling */
 }
 
-ul, ol { /* Reset Lists */
-    list-style: none;
+ul,
+ol {
+  /* Reset Lists */
+  list-style: none;
 }
 
-a { /* Reset Links */
-    text-decoration: none;
+a {
+  /* Reset Links */
+  text-decoration: none;
 }
 
-html { /* Hide scrollbar */
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-  }
+html {
+  /* Hide scrollbar */
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 
 /* End Resets */

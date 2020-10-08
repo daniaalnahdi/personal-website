@@ -1,80 +1,86 @@
 /* Start Typography */
 
-html, body {
-    text-rendering: geometricPrecision;
+html,
+body {
+  text-rendering: geometricPrecision;
 }
 
 body {
-    font-family: $body-font, sans-serif;
-    color: $primary;
+  font-family: $body-font, sans-serif;
+  color: $primary;
 }
 
-h1, h2 {
-    font-family: $h-font, sans-serif;
+h1,
+h2 {
+  font-family: $h-font, sans-serif;
 }
 
 h3 {
-    line-height: 1.5em;
+  line-height: 1.5em;
 }
 
 @media ($sm-screen) {
-    h3 {
-        padding-left: 3em;
-        padding-right: 3em;
-    }
+  h3 {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 }
 
-h3, h4 {
-    font-family: $sm-h-font, sans-serif;
+h3,
+h4 {
+  font-family: $sm-h-font, sans-serif;
 }
 
-h1, h3 {
-    text-align: center;
+h1,
+h3 {
+  text-align: center;
 }
 
-h2, h3, h4 {
-    text-transform: lowercase;
+h2,
+h3,
+h4 {
+  text-transform: lowercase;
 }
 
 p {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1.5em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 
 a {
-    color: $accent-dark;
+  color: $accent-dark;
 
-    @include transition(0.3);
+  @include transition(0.3);
 }
 
 a:hover {
-    color: $accent-light;
+  color: $accent-light;
 }
 
 .a-underline {
-    margin-bottom: 2px;
-    margin-left: 1px;
-    margin-right: 1px;
-    border-bottom: 1.5px solid $accent-light;
-    font-weight: 500;
-    font-family: 'Work Sans', sans-serif;
+  margin-bottom: 2px;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-bottom: 1.5px solid $accent-light;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .no-lowercase {
-    text-transform: none;
+  text-transform: none;
 }
 
 .underline-sm:after {
-    @include underline(3em, 0.3em);
+  @include underline(3em, 0.3em);
 }
 
 .underline-md:after {
-    @include underline(4.5em, 0.45em);
+  @include underline(4.5em, 0.45em);
 }
 
 .underline-lg:after {
-    @include underline(12em, 2em);
+  @include underline(12em, 2em);
 }
 
 /* End Typography */

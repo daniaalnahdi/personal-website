@@ -1,47 +1,49 @@
 /* Start General */
 
 body {
-    background-color: $bg-color;
+  background-color: $bg-color;
 }
 
-$selection-color: #E9F0F2;
+$selection-color: #e9f0f2;
 
 ::selection {
-    background: $selection-color; /* WebKit/Blink Browsers */
+  background: $selection-color; /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: $selection-color; /* Gecko Browsers */
-} 
+  background: $selection-color; /* Gecko Browsers */
+}
 
-button, button:focus, button:active {
-    width: 7em;
-    height: 2.5em;
-    margin: 0.5em;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 300;
-    color: $accent-dark;
-    background-color: rgba($accent-light, 0.07);
-    border: 1px solid $accent-dark;
-    outline: none;
+button,
+button:focus,
+button:active {
+  width: 7em;
+  height: 2.5em;
+  margin: 0.5em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  color: $accent-dark;
+  background-color: rgba($accent-light, 0.07);
+  border: 1px solid $accent-dark;
+  outline: none;
 
-    @include rounded-corners(0.2em);
-    @include transition(0.3);
-    cursor: pointer;
+  @include rounded-corners(0.2em);
+  @include transition(0.3);
+  cursor: pointer;
 }
 
 button:hover {
-    //color: $bg-color;
-    background-color: $bg-color;
-
+  //color: $bg-color;
+  background-color: $bg-color;
 }
 
 @media ($md-screen) {
-    button, button:focus, button:active {
+  button,
+  button:focus,
+  button:active {
     font-size: 1.2rem;
-    }
-
+  }
 }
 
 /*End General */

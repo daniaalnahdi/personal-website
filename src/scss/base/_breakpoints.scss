@@ -1,54 +1,58 @@
 /* Start Breakpoints */
 
-@media ($xs-screen) { /* Mobile and Tablet Screens */
+@media ($xs-screen) {
+  /* Mobile and Tablet Screens */
 
-    .visible-xs {
-        display: flex !important;
-    }
+  .visible-xs {
+    display: flex !important;
+  }
 
-    .hidden-xs {
-        display: none !important;
-    }
+  .hidden-xs {
+    display: none !important;
+  }
 }
 
-@media ($sm-screen) and (max-width: 991px) { /*Small Screens*/
+@media ($sm-screen) and (max-width: 991px) {
+  /*Small Screens*/
 
-    .visible-sm {
-        display: flex !important;
-    }
+  .visible-sm {
+    display: flex !important;
+  }
 
-    .hidden-sm {
-        display: none !important;
-    }
+  .hidden-sm {
+    display: none !important;
+  }
 }
 
-@media ($md-screen) and (max-width: 1199px) { /*Medium Screens*/
+@media ($md-screen) and (max-width: 1199px) {
+  /*Medium Screens*/
 
-    .visible-md {
-        display: flex !important;
-    }
+  .visible-md {
+    display: flex !important;
+  }
 
-    .hidden-md {
-        display: none !important;
-    }
+  .hidden-md {
+    display: none !important;
+  }
 }
 
-@media ($lg-screen) { /*Large Screens*/
+@media ($lg-screen) {
+  /*Large Screens*/
 
-    .visible-lg {
-        display: flex !important;
-    }
+  .visible-lg {
+    display: flex !important;
+  }
 
-    .hidden-lg {
-        display: none !important;
-    }
+  .hidden-lg {
+    display: none !important;
+  }
 }
 
 .visible-xs,
 .visible-sm,
 .visible-md,
 .visible-lg {
-    display: none;
+  display: none;
 }
 
 /* End Breakpoints */

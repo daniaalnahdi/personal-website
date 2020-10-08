@@ -1,100 +1,73 @@
 /* Start Text Containers */
-.underline {
-    @include remove-selection;
-}
-
 
 .nav-li-container {
-    display: flex;
-    flex-direction: column;
-
-    .underline {
-        width: 3em;
-        margin-right: 0.5em;
-        margin-top: 0.2em;
-    }
+  display: flex;
+  flex-direction: column;
 }
 
 .lg-heading-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    .underline {
-        width: 10em;
-        margin: 1em;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sm-heading-container {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
 }
 
 #about-container {
-
-    p {
-        margin: 1.5em auto;
-    }
+  p {
+    margin: 1.5em auto;
+  }
 }
 
 @media ($md-screen) {
-    #about-container {
-        display: flex;
-        flex-direction: row;
+  #about-container {
+    display: flex;
+    flex-direction: row;
 
-        .p-body {
-            margin-left: 1em;
-            margin-right: 1em;
-            font-size: 0.9rem;
-        }
-
-        .sm-heading-container {
-            display: flex;
-            justify-content: center;
-            margin: auto 6em;
-
-            .underline {
-                margin-right: 3em;
-            }
-        }
+    .p-body {
+      margin-left: 1em;
+      margin-right: 1em;
+      font-size: 0.9rem;
     }
+
+    .sm-heading-container {
+      display: flex;
+      justify-content: center;
+      margin: auto 6em;
+    }
+  }
 }
 
 @media ($lg-screen) {
-    #about-container {
-
-        .p-body {
-            font-size: 1rem;
-        }
-
-        .sm-heading-container {
-            display: flex;
-            justify-content: center;
-            margin: auto 8em;
-        }
+  #about-container {
+    .p-body {
+      font-size: 1rem;
     }
+
+    .sm-heading-container {
+      display: flex;
+      justify-content: center;
+      margin: auto 8em;
+    }
+  }
 }
 
 @media ($md-screen) {
-    #projects-container {
-        display: flex;
-        flex-direction: row-reverse;
+  #projects-container {
+    display: flex;
+    flex-direction: row-reverse;
 
-        .sm-heading-container {
-            display: flex;
-            justify-content: center;
-            margin: auto 9em;
-
-            .underline {
-                margin-right: 3em;
-            }
-        }
+    .sm-heading-container {
+      display: flex;
+      justify-content: center;
+      margin: auto 9em;
     }
+  }
 }
-
-
 
 /* End Text Containers */

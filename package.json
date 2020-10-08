@@ -1,8 +1,14 @@
 {
-  "name": "daniaalnahdi",
-  "version": "1.0.0",
+  "name": "personal-website",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "rimraf ./dist && webpack --config webpack.prod.js",
+    "deploy": "npm run build && echo 'daniaalnahdi.com' > ./dist/CNAME && gh-pages -d dist"
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.11.6",
@@ -25,21 +31,5 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.2.0"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "rimraf ./dist && webpack --config webpack.prod.js",
-    "deploy": "npm run build && echo 'daniaalnahdi.com' > ./dist/CNAME && gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daniaalnahdi/daniaalnahdi.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/daniaalnahdi/daniaalnahdi/issues"
-  },
-  "homepage": "https://github.com/daniaalnahdi/daniaalnahdi#readme"
+  }
 }
