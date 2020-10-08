@@ -1,0 +1,40 @@
+/* Start Variables */
+
+$xs: 767; /* Screen Sizes */
+$sm: 768;
+$md: 992;
+$lg: 1200;
+
+$xs-screen: 'max-width: ' + $xs + 'px'; /* Breakpoints */
+$sm-screen: 'min-width: ' + $sm + 'px';
+$md-screen: 'min-width: ' + $md + 'px';
+$lg-screen: 'min-width: ' + $lg + 'px';
+
+$body-font: 'Work Sans';
+$sm-h-font: 'Gotham Rounded Book';
+$h-font: 'Gotham Rounded Medium';
+
+$lg-img: 25em;
+$md-img: 20em;
+$sm-img: 15em;
+$xs-img: 13em;
+
+$bg-color: #ffffff; /* Background Colors */
+$fg-color: #fefefe;
+$shadow: #f5f5f5;
+
+$accent-light: #87aaad; /* Accent Colors */
+$accent-dark: #4c7679;
+
+$primary: #3a3a3a; /* Text Colors */
+$secondary: #8d8d8d;
+
+$underline-img: '../assets/images/underline.svg'; /* Images */
+$intro-img: '../assets/images/intro.svg';
+$contact-img: '../assets//images/contact.svg';
+
+// $underline-img: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'; /* Images */
+// $intro-img: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png';
+// $contact-img: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png';
+
+/* End Variables */

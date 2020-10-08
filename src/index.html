@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dania Alnahdi</title>
-    <link rel="icon" href="/images/favicon.png">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="/public/images/favicon.png">
     <script src="https://kit.fontawesome.com/82bf97873e.js"></script>
 </head>
 
@@ -19,9 +18,9 @@
             </a>
             <!-- Desktop Navigation -->
             <ul id="bar-links" class="hidden-xs hidden-sm">
-                <li><a>About<img src="/images/underline.svg" class="nav-underline" /></a></li>
-                <li><a>Projects<img src="/images/underline.svg" class="nav-underline" /></a></li>
-                <li><a>Contact<img src="/images/underline.svg" class="nav-underline" /></a></li>
+                <li><a>About<span class="nav-underline"></span></a></li>
+                <li><a>Projects<span class="nav-underline"></span></a></li>
+                <li><a>Contact<span class="nav-underline"></span></a></li>
                 <!-- <button>Résumé</button> -->
             </ul>
             <!-- Mobile Navigaton -->
@@ -36,17 +35,17 @@
         <aside>
             <ul id="side-links">
                 <li>
-                    <div class="nav-li-container"><a>About</a><img src="/images/underline.svg" class="underline" />
+                    <div class="nav-li-container underline-sm"><a>About</a>
                 </li>
                 </div>
                 </li>
                 <li>
-                    <div class="nav-li-container"><a>Projects</a><img src="/images/underline.svg" class="underline" />
+                    <div class="nav-li-container underline-sm"><a>Projects</a>
                 </li>
                 </div>
                 </li>
                 <li>
-                    <div class="nav-li-container"><a>Contact</a><img src="/images/underline.svg" class="underline" />
+                    <div class="nav-li-container underline-sm"><a>Contact</a>
                     </div>
                 </li>
                 <!-- <button>Résumé</button> -->
@@ -59,11 +58,10 @@
         <div class="container">
             <!-- Intro Section -->
             <section class="fade-in">
-                <img src="/images/intro.svg" id="intro-section-img" />
-                <div class="lg-heading-container">
+                <span id="intro-section-img"></span>
+                <div class="lg-heading-container underline-lg">
                     <h1>Hi, I&#8217;m Dania!</h1>
                     <h3>Aspiring developer + designer</h3>
-                    <img src="/images/underline.svg" class="underline" />
                     <!-- <button>My Résumé</button> -->
                 </div>
             </section>
@@ -71,11 +69,9 @@
         <div class="container">
             <!-- About Section -->
             <section>
-                <!-- <img src="/images/break.svg" class="break fade-in"/> -->
                 <div id="about-container">
                     <div class="sm-heading-container fade-in">
-                        <h2>About Me</h2>
-                        <img src="/images/underline.svg" class="underline" />
+                        <h2 class="underline-md">About Me</h2>
                     </div>
                     <div class="p-body">
                         <p class="fade-in">I&#8217;m Dania Alnahdi, a student from Bahrain pursuing a BS in Computer
@@ -88,10 +84,10 @@
                         </p>
                         <p class="fade-in">
                             Thanks to my coursework at
-                            <a href="https://www.northeastern.edu/" target="_blank" class="a-underline">Northeastern
+                            <a href="https://www.northeastern.edu/" target="_blank" rel="noopener noreferrer" class="a-underline">Northeastern
                                 University</a>, experience at
-                            <a href="https://www.mfs.com/en-us/" target="_blank" class="a-underline">MFS</a> and
-                            <a href="https://www.manageun.com/" target="_blank" class="a-underline">ManageUN</a>, and
+                            <a href="https://www.mfs.com/en-us/" target="_blank" rel="noopener noreferrer" class="a-underline">MFS</a> and
+                            <a href="https://www.manageun.com/" target="_blank" rel="noopener noreferrer"class="a-underline">ManageUN</a>, and
                             the numerious internet
                             rabbit holes I tumble into, I&#8217;m
                             always
@@ -151,10 +147,9 @@
         <div class="container">
             <!-- Projects Section -->
             <section>
-                <div id="proj-container">
+                <div id="projects-container">
                     <div class="sm-heading-container fade-in">
-                        <h2>Personal Projects</h2>
-                        <img src="/images/underline.svg" class="underline" />
+                        <h2 class="underline-md">Personal Projects</h2>
                     </div>
                 </div>
                 <ul class="info-grid">
@@ -164,8 +159,7 @@
                                 <div class="info-content">
                                     <label>Code + Illustrations</label>
                                     <div class="info-heading">
-                                        <h4>Personal Website</h4>
-                                        <img src="/images/underline.svg" class="underline" />
+                                        <h4 class="underline-sm">Personal Website</h4>
                                     </div>
                                     <p>This very website! My goal was to create a responsive, mobile-first website from
                                         sratch without relying on a CSS or JavaScript library. I also
@@ -174,7 +168,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <a href="https://github.com/daniaalnahdi/daniaalnahdi.com" target="_blank">
+                                    <a href="https://github.com/daniaalnahdi/daniaalnahdi.com" target="_blank" rel="noopener noreferrer">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
@@ -190,8 +184,7 @@
                                 <div class="info-content">
                                     <label>Code</label>
                                     <div class="info-heading">
-                                        <h4 class="no-lowercase">reCursor</h4>
-                                        <img src="/images/underline.svg" class="underline" />
+                                        <h4 class="underline-sm no-lowercase">reCursor</h4>
                                     </div>
                                     <p>A fun Google Chrome extension that changes your browser&#8217;s cursor to
                                         an icon
@@ -200,7 +193,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <a href="https://github.com/daniaalnahdi/reCursor" target="_blank">
+                                    <a href="https://github.com/daniaalnahdi/reCursor" target="_blank" rel="noopener noreferrer">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
@@ -216,8 +209,7 @@
                                 <div class="info-content">
                                     <label>Code</label>
                                     <div class="info-heading">
-                                        <h4>Space Explorer</h4>
-                                        <img src="/images/underline.svg" class="underline" />
+                                        <h4 class="underline-sm">Space Explorer</h4>
                                     </div>
                                     <p>A light-hearted space adventure game inspired by 8-bit arcade games. I had
                                         a lot of fun working with JSON to set up the scoreboard functionality, and also
@@ -225,7 +217,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <a href="https://github.com/daniaalnahdi/Space-Explorer" target="_blank">
+                                    <a href="https://github.com/daniaalnahdi/Space-Explorer" target="_blank" rel="noopener noreferrer">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
@@ -241,8 +233,7 @@
                                 <div class="info-content">
                                     <label>Code</label>
                                     <div class="info-heading">
-                                        <h4>Simple To-Do List</h4>
-                                        <img src="/images/underline.svg" class="underline" />
+                                        <h4 class="underline-sm">Simple To-Do List</h4>
                                     </div>
                                     <p>What first started out as a JavaScript learning exercise turned into this
                                         basic to-do
@@ -250,7 +241,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <a href="https://codepen.io/daniaalnahdi/pen/BbMdNq" target="_blank">
+                                    <a href="https://codepen.io/daniaalnahdi/pen/BbMdNq" target="_blank" rel="noopener noreferrer">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
@@ -267,8 +258,7 @@
                                 <div class="info-content">
                                     <label>UX/UI</label>
                                     <div class="info-heading">
-                                        <h4 class="no-lowercase">safeT</h4>
-                                        <img src="/images/underline.svg" class="underline" />
+                                        <h4 class="underline-sm no-lowercase">safeT</h4>
                                     </div>
                                     <p>A prototype for a mobile application addressing public transportation
                                         safety
@@ -278,7 +268,7 @@
                                 </div>
                                 <div>
                                     <a href="https://docs.google.com/presentation/d/e/2PACX-1vQ8qufHiS_x4TaOo-Bnj0tXglmMgJI17_-PfmTQhv-8HFhsnxxrtgGDlq4b8TVkvIZYKafRr-B1MmIz/pub?start=true&loop=false&delayms=30000&slide=id.p"
-                                        target="_blank">
+                                        target="_blank" rel="noopener noreferrer">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
@@ -294,8 +284,7 @@
                                 <div class="info-content">
                                     <label>Graphic Design</label>
                                     <div class="info-heading">
-                                        <h4>Brand Manual</h4>
-                                        <img src="/images/underline.svg" class="underline" />
+                                        <h4 class="underline-sm">Brand Manual</h4>
                                     </div>
                                     <p>Style manual for my personal brand identity, containing logo, stationery,
                                         and other design assets. It also documents the beginning of my love affair with
@@ -303,7 +292,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <a href="/files/Dania Alnahdi - Brand Book.pdf" target="_blank">
+                                    <a href="/files/Dania Alnahdi - Brand Book.pdf" target="_blank" rel="noopener noreferrer">
                                         <i class="fas fa-external-link-alt"></i>
                                     </a>
                                 </div>
@@ -319,30 +308,26 @@
         <div class="container">
             <!-- Contact Section -->
             <section class="fade-in">
-                <img src="/images/contact.svg" id="contact-section-img" />
-                <div class="lg-heading-container">
+                <span id="contact-section-img"></span>
+                <div class="lg-heading-container underline-lg">
                     <h1>Say hi!</h1>
                     <h3>Contact me at <a href="mailto:alnahdi.d@northeastern.edu" target="_top"
-                            class="a-underline">alnahdi.d@northeastern.edu</a></h3>
-                    <img src="/images/underline.svg" class="underline" />
-                    <div class="lg-text-container">
-            </section>
+                            class="a-underline">alnahdi.d@northeastern.edu</a></h3>            </section>
         </div>
     </div>
     <!-- Start Footer-->
     <footer>
         <div class="container">
             <ul>
-                <li><a href="https://www.linkedin.com/in/daniaalnahdi/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/daniaalnahdi" target="_blank">GitHub</a></li>
-                <li><a href="https://codepen.io/daniaalnahdi/" target="_blank">CodePen</a></li>
+                <li><a href="https://www.linkedin.com/in/daniaalnahdi/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/daniaalnahdi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://codepen.io/daniaalnahdi/" target="_blank" rel="noopener noreferrer">CodePen</a></li>
             </ul>
-            <div>© Dania Alnahdi 2019</div>
+            <span>© Dania Alnahdi 2020</span>
         </div>
     </footer>
     <!-- End Footer-->
     <!-- End Body -->
-    <script type="module" src="script/index.js"></script>
 </body>
 
 </html>

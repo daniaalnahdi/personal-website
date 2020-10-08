@@ -1,0 +1,36 @@
+/* Start Container */
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media ($xs-screen) {
+  /* Mobile and Tablet Screens */
+}
+
+@media ($sm-screen) and (max-width: 991px) {
+  /*Small Screens*/
+
+  .container {
+    width: 780px;
+  }
+}
+
+@media ($md-screen) and (max-width: 1199px) {
+  /*Medium Screens*/
+
+  .container {
+    width: 1000px;
+  }
+}
+
+@media ($lg-screen) {
+  /*Large Screens*/
+
+  .container {
+    width: 1200px;
+  }
+}
+
+/* End Container */
