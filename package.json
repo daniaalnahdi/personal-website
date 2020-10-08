@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "rimraf ./build && webpack --config webpack.prod.js"
+    "build": "rimraf ./dist && webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
