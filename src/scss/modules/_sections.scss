@@ -14,30 +14,12 @@ section {
   }
 
   .container:nth-of-type(2) > section {
-    padding-top: 2em;
-    padding-bottom: 4em;
-  }
-
-  .container:nth-of-type(3) > section {
-    padding-top: 2em;
-  }
-
-  .container:last-of-type > section {
-    padding-top: 0;
+    padding-bottom: 7em;
   }
 
   @media ($md-screen) {
     .container:first-of-type > section {
       margin-top: 2em;
-    }
-
-    .container:nth-of-type(2) > section {
-      padding: 2em 3em;
-    }
-
-    .container:nth-of-type(3) {
-      padding: 2em 3em;
-      padding-top: 5em;
     }
   }
 
@@ -61,12 +43,6 @@ section {
   }
 
   @media ($md-screen) {
-    .container:first-of-type > section,
-    .container:last-of-type > section {
-      padding-left: 5em;
-      padding-right: 5em;
-    }
-
     .container:first-of-type > section {
       justify-content: space-around;
       flex-direction: row-reverse;
@@ -74,7 +50,7 @@ section {
     }
 
     #intro-section-img {
-      @include section-img($intro-img, $lg-img);
+      @include section-img($intro-img, $md-img);
       margin: 0;
     }
 
@@ -89,9 +65,9 @@ section {
       padding: 0em;
     }
 
-    .container:first-of-type > section {
-      padding-left: 7em;
-      padding-right: 7em;
+    #intro-section-img {
+      @include section-img($intro-img, $lg-img);
+      margin: 0;
     }
   }
 }

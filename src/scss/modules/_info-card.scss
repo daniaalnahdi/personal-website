@@ -2,7 +2,7 @@
 
 .info-grid {
   display: grid;
-  grid-gap: 2.5em;
+  grid-gap: 2.75em;
   margin: 2em 1em;
 
   li {
@@ -25,7 +25,7 @@
 
 .info-card {
   background: $fg-color;
-  height: 27em;
+  height: 30em;
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,6 @@
     a,
     a:visited {
       cursor: pointer;
-      font-size: 1rem;
 
       i {
         color: $accent-dark;
@@ -62,6 +61,7 @@
   .info-content {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 
     .info-heading {
       display: flex;
@@ -96,22 +96,36 @@
       color: $accent-light;
     }
   }
-}
 
-@media (min-width: 639px) {
-  .info-card {
-    height: 19em;
+  .info-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      margin-bottom: 0.6rem;
+
+      svg {
+        font-size: 1.3rem;
+      }
+
+      .fa-external-link-alt {
+        font-size: 1.15rem;
+      }
+    }
+
+    a:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 @media ($sm-screen) {
   .info-card {
-    height: 24em;
+    height: 25em;
 
     .info-content {
-      p {
-        font-size: 0.9rem;
-      }
+      font-size: 0.9rem;
     }
 
     .info-footer {
@@ -124,10 +138,6 @@
 
 @media ($md-screen) {
   .info-card {
-    a {
-      font-size: 0.85rem;
-    }
-
     .info-footer {
       p {
         font-size: 0.7rem;
