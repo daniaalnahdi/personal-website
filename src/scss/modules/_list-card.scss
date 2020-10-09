@@ -44,12 +44,12 @@
     transition: all 0.3s;
 
     @include rounded-corners(30px);
-  }
 
-  i {
-    font-size: 1.5rem;
-    color: $bg-color;
-    text-align: center;
+    svg {
+      font-size: 1.5rem;
+      color: $bg-color;
+      text-align: center;
+    }
   }
 }
 
