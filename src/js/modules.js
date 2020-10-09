@@ -158,9 +158,7 @@ export const NavLinks = (() => {
     sideLinks = document.querySelectorAll('#side-links li');
 
   // Scrolls to the given section
-  const scrollToSection = (event, sectionId) => {
-    event.preventDefault();
-
+  const scrollToSection = (sectionId) => {
     window.setTimeout(() => {
       if (Utils.isMobile()) {
         NavStates.toggleNav();
@@ -209,11 +207,13 @@ export const NavLinks = (() => {
       barLink.href = '';
       sideLink.href = '';
 
-      barLink.addEventListener('click', () => {
-        scrollToSection(event, sectionId);
+      barLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        scrollToSection(sectionId);
       });
-      sideLink.addEventListener('click', () => {
-        scrollToSection(event, sectionId);
+      sideLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        scrollToSection(sectionId);
       });
       window.addEventListener('scroll', () => {
         Utils.debounce(highlightNavLink(sectionId, sectionsIndexOffset));
