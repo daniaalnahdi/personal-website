@@ -25,7 +25,7 @@
 
 .info-card {
   background: $fg-color;
-  height: 30em;
+  height: 32em;
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
@@ -66,8 +66,8 @@
     .info-heading {
       display: flex;
       flex-direction: column;
-      margin-top: 1em;
-      margin-bottom: 1em;
+      margin: 1em;
+      margin-left: 0;
 
       h4 {
         font-size: 1.1em;
@@ -101,17 +101,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 0.5rem;
 
     a {
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.75rem;
 
       svg {
-        font-size: 1.3rem;
+        font-size: 1.45rem;
       }
 
       .fa-external-link-alt {
-        font-size: 1.15rem;
+        font-size: 1.3rem;
       }
     }
 
@@ -123,7 +122,7 @@
 
 @media ($sm-screen) {
   .info-card {
-    height: 25em;
+    height: 26em;
 
     .info-content {
       font-size: 0.9rem;
