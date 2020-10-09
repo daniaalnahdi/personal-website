@@ -21,10 +21,10 @@ export const Utils = (() => {
   // Limits invocation of function
   const debounce = (func, wait = 10, immediate = true) => {
     let timeout;
-    return function () {
+    return () => {
       let context = this,
         args = arguments;
-      let later = function () {
+      let later = () => {
         timeout = null;
         if (!immediate) func.apply(context, args);
       };
