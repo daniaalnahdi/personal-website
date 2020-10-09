@@ -19,19 +19,15 @@ export const Utils = (() => {
   };
 
   // Limits invocation of function
-  const debounce = (func, wait = 10, immediate = true) => {
+  const debounce = (callback, wait = 10) => {
     let timeout;
-    return () => {
-      let context = this,
-        args = arguments;
-      let later = () => {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      let callNow = immediate && !timeout;
+
+    return (...args) => {
+      const context = this;
+      //restart timer when returned function is called
       clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
+      //set new timeout
+      timeout = setTimeout(() => callback.apply(context, args), wait);
     };
   };
 
@@ -46,8 +42,8 @@ export const Utils = (() => {
 export const NavStates = (() => {
   const icon = document.querySelector('.burger-container'),
     sideNav = document.querySelector('aside'),
-    navLinks = document.querySelector('#side-links'),
-    navTitle = document.querySelector('#nav-h'),
+    navLinks = document.querySelector('#nav-side-links'),
+    navTitle = document.querySelector('#nav-heading'),
     bar = document.querySelector('nav');
   let scrollPos = 0;
 
@@ -154,8 +150,8 @@ export const NavStates = (() => {
 
 export const NavLinks = (() => {
   const sections = document.querySelectorAll('section'),
-    barLinks = document.querySelectorAll('#bar-links li'),
-    sideLinks = document.querySelectorAll('#side-links li');
+    barLinks = document.querySelectorAll('#nav-bar-links li'),
+    sideLinks = document.querySelectorAll('#nav-side-links li');
 
   // Scrolls to the given section
   const scrollToSection = (sectionId) => {
@@ -175,7 +171,7 @@ export const NavLinks = (() => {
     const section = document.getElementById(sectionId),
       link = barLinks[sectionId - sectionsIndexOffset].querySelector('a'),
       underline = barLinks[sectionId - sectionsIndexOffset].querySelector(
-        '.nav-underline'
+        '.nav-link-underline'
       );
 
     const startPos = section.offsetTop,
@@ -186,10 +182,10 @@ export const NavLinks = (() => {
       window.pageYOffset >= startPos - offSet &&
       window.pageYOffset <= endPos - offSet
     ) {
-      underline.classList.add('nav-underline-highlighted');
+      underline.classList.add('nav-link-underline-highlighted');
       link.classList.add('a-highlighted');
     } else {
-      underline.classList.remove('nav-underline-highlighted');
+      underline.classList.remove('nav-link-underline-highlighted');
       link.classList.remove('a-highlighted');
     }
   };

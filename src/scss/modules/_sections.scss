@@ -61,8 +61,6 @@ section {
   }
 
   @media ($md-screen) {
-    /*Medium Screens*/
-
     .container:first-of-type > section,
     .container:last-of-type > section {
       padding-left: 5em;
@@ -86,8 +84,6 @@ section {
   }
 
   @media ($lg-screen) {
-    /*Large Screens*/
-
     .container:first-of-type > section,
     .container:last-of-type > section {
       padding: 0em;

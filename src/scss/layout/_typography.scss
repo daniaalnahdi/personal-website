@@ -71,16 +71,4 @@ a:hover {
   text-transform: none;
 }
 
-.underline-sm:after {
-  @include underline(3em, 0.3em);
-}
-
-.underline-md:after {
-  @include underline(4.5em, 0.45em);
-}
-
-.underline-lg:after {
-  @include underline(12em, 2em);
-}
-
 /* End Typography */
