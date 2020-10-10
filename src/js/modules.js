@@ -1,3 +1,5 @@
+import { Translator } from './translator';
+
 export const Utils = (() => {
   const html = document.querySelector('html'),
     body = document.querySelector('body');
@@ -44,7 +46,9 @@ export const NavStates = (() => {
     sideNav = document.querySelector('aside'),
     navLinks = document.querySelector('#nav-side-links'),
     navTitle = document.querySelector('#nav-heading'),
-    bar = document.querySelector('nav');
+    bar = document.querySelector('nav'),
+    translateToggle = document.getElementById('langbutton');
+
   let scrollPos = 0;
 
   // Opens and closes mobile navigation
@@ -134,11 +138,18 @@ export const NavStates = (() => {
     }
   };
 
+  // Toggle Language between Arabic and English
+  const toggleLanguage = () => {
+    const nextLanguage = document.documentElement.lang == 'en' ? 'ar' : 'en';
+    Translator.changeLanguage(nextLanguage);
+  };
+
   // Sets up event listeners
   const setUpEventListeners = () => {
     icon.addEventListener('click', toggleNav);
     window.addEventListener('resize', closeNav);
     window.addEventListener('scroll', Utils.debounce(toggleBar));
+    translateToggle.addEventListener('click', toggleLanguage);
   };
 
   return {

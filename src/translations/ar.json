@@ -1,0 +1,10 @@
+{
+  "greeting": "مرحبا",
+  "header": {
+    "title": "عنوان",
+    "button": "زر",
+    "nested": {
+      "nested2": "تست"
+    }
+  }
+}
