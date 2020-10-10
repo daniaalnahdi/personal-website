@@ -49,7 +49,8 @@ export const Translator = (() => {
       );
 
       if (text) {
-        const textNode = document.createTextNode(text);
+        const textNode = document.createElement('SPAN');
+        textNode.innerHTML = text;
         element.prepend(textNode);
       }
     });

@@ -1,6 +1,23 @@
 {
-  "greeting": "Hello World",
-  "header": {
+  "intro": {
+    "heading": "Hi, I'm Dania!",
+    "subheading": "Developer + Designer"
+  },
+  "about": {
+    "heading": "About Me",
+    "bio": {
+      "1": "I'm Dania Alnahdi, a student from Bahrain pursuing a BS in Computer Science and Design in Boston, MA. I'm interested in web and software development, inclusive and human-centered technology, and interactive (and pretty) user interfaces.",
+      "2": "Thanks to my coursework at <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a>, industry experience at <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>Asics Digital</a> and <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>, and the numerious internet rabbit holes I tumble into, I’m always exploring new skills from both the development and design worlds."
+    }
+  },
+  "projects": {
+    "title": "This is the header text",
+    "button": "Click me!",
+    "nested": {
+      "nested2": "hi"
+    }
+  },
+  "contact": {
     "title": "This is the header text",
     "button": "Click me!",
     "nested": {

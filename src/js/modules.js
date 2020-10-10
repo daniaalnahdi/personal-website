@@ -72,7 +72,6 @@ export const NavStates = (() => {
         bar.classList.remove('slide-out');
         sideNav.classList.remove('show-links');
         hideBar();
-        //globalUtils.enableScroll();
       }, 300);
     } else {
       //transition effect
@@ -85,7 +84,6 @@ export const NavStates = (() => {
       icon.classList.add('cross');
       bar.classList.add('slide-out', 'show-bar');
       sideNav.classList.add('show-links');
-      //globalUtils.disableScroll();
     }
   };
 
@@ -165,7 +163,7 @@ export const NavLinks = (() => {
     sideLinks = document.querySelectorAll('#nav-side-links li');
 
   // Scrolls to the given section
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionIndex) => {
     window.setTimeout(() => {
       if (Utils.isMobile()) {
         NavStates.toggleNav();
@@ -174,14 +172,14 @@ export const NavLinks = (() => {
       }
     }, 300);
 
-    document.getElementById(sectionId).scrollIntoView();
+    document.body.querySelector(`[data-index='${sectionIndex}']`).scrollIntoView();
   };
 
   //highlights the link in the nav bar if the link section is viewed
-  const highlightNavLink = (sectionId, sectionsIndexOffset = 0) => {
-    const section = document.getElementById(sectionId),
-      link = barLinks[sectionId - sectionsIndexOffset].querySelector('a'),
-      underline = barLinks[sectionId - sectionsIndexOffset].querySelector(
+  const highlightNavLink = (sectionIndex, sectionsIndexOffset = 0) => {
+    const section = document.body.querySelector(`[data-index='${sectionIndex}']`),
+      link = barLinks[sectionIndex - sectionsIndexOffset].querySelector('a'),
+      underline = barLinks[sectionIndex - sectionsIndexOffset].querySelector(
         '.nav-link-underline'
       );
 
@@ -205,25 +203,25 @@ export const NavLinks = (() => {
     // Get section positions to scroll to
     for (let i = 0; i < sections.length - 1; i++) {
       const sectionsIndexOffset = 1, //skips first section
-        sectionId = i + sectionsIndexOffset,
-        section = sections[sectionId], //ignores first section
+        sectionIndex = i + sectionsIndexOffset,
+        section = sections[sectionIndex],
         barLink = barLinks[i].querySelector('a'),
         sideLink = sideLinks[i].querySelector('a');
 
-      section.setAttribute('id', sectionId);
+      section.setAttribute('data-index', sectionIndex);
       barLink.href = '';
       sideLink.href = '';
 
       barLink.addEventListener('click', (e) => {
         e.preventDefault();
-        scrollToSection(sectionId);
+        scrollToSection(sectionIndex);
       });
       sideLink.addEventListener('click', (e) => {
         e.preventDefault();
-        scrollToSection(sectionId);
+        scrollToSection(sectionIndex);
       });
       window.addEventListener('scroll', () => {
-        Utils.debounce(highlightNavLink(sectionId, sectionsIndexOffset));
+        Utils.debounce(highlightNavLink(sectionIndex, sectionsIndexOffset));
       });
     }
   };

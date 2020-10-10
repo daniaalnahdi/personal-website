@@ -58,17 +58,18 @@ a:hover {
   color: $accent-light;
 }
 
-.a-underline {
+.no-lowercase {
+  text-transform: none;
+}
+
+#about-section a,
+#contact-section a {
   margin-bottom: 2px;
   margin-left: 1px;
   margin-right: 1px;
   border-bottom: 1.5px solid $accent-light;
   font-weight: 500;
   font-family: 'Work Sans', sans-serif;
-}
-
-.no-lowercase {
-  text-transform: none;
 }
 
 /* End Typography */
