@@ -25,7 +25,7 @@
 
 .info-card {
   background: $fg-color;
-  height: 32em;
+  height: 33.5em;
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@
     display: flex;
     justify-content: center;
 
-    p {
+    p, span {
       align-self: flex-end;
       text-align: center;
       text-transform: uppercase;
