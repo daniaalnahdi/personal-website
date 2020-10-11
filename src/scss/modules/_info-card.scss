@@ -91,7 +91,8 @@
     display: flex;
     justify-content: center;
 
-    p, span {
+    p,
+    span {
       align-self: flex-end;
       text-align: center;
       text-transform: uppercase;
@@ -128,6 +129,13 @@
   .info-content {
     margin-right: 0;
     margin-left: 1em;
+  }
+}
+
+//Custom breakpoint
+@media (min-width: 450px) {
+  .info-card {
+    height: 23em;
   }
 }
 
