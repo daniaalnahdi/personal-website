@@ -9,12 +9,15 @@ export const Translator = (() => {
   ]);
   let selectedLanguage;
 
-  // Sets default language based on user history
+  // Sets default language based on params or user history
   const setDefaultLanguage = () => {
-    // Get last-stored language
-    let languageCode = window.localStorage.getItem('language');
+    const queryParams = new URLSearchParams(window.location.search);
+    //1. Check query params OR 2. Check last-stored language
+    let languageCode = queryParams.has('lang')
+      ? queryParams.get('lang')
+      : window.localStorage.getItem('language');
 
-    //If no language stored, get browser language
+    //3. Get browser language
     if (!languageCode) {
       const browserLanguage = navigator.languages
         ? navigator.languages[0]
@@ -34,6 +37,13 @@ export const Translator = (() => {
     }
   };
 
+  const setLanguageParams = () => {
+    const queryParams = new URLSearchParams(window.location.search);
+
+    queryParams.set('lang', selectedLanguage.code);
+    history.replaceState(null, null, '?' + queryParams.toString());
+  };
+
   // Changes the HTML language tag
   const setLanguageTag = () => {
     document.documentElement.lang = selectedLanguage.code;
@@ -44,7 +54,13 @@ export const Translator = (() => {
     const body = document.querySelector('body');
     const rtl = selectedLanguage.code == 'ar';
 
-    rtl ? body.classList.add('rtl') : body.classList.remove('rtl');
+    if (rtl) {
+      body.classList.add('rtl');
+      body.classList.remove('ltr');
+    } else {
+      body.classList.add('ltr');
+      body.classList.remove('rtl');
+    }
 
     elements.forEach((element) => {
       const keys = element.dataset.translate.split('-');
@@ -83,6 +99,7 @@ export const Translator = (() => {
     window.localStorage.setItem('language', languageCode); // Saves user's preference
 
     clearTranslations();
+    setLanguageParams();
     setLanguageTag();
     translate();
   };
