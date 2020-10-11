@@ -8,9 +8,9 @@
   </head>
   <body>
     <!-- Start Navigation -->
-    <nav>
+    <nav class="ltr" lang="en">
       <div class="container">
-        <a href="/"><h4 id="nav-heading">Dania Alnahdi</h4></a>
+        <a href="/"><h4 id="nav-heading" lang="en">Dania Alnahdi</h4></a>
         <!-- Desktop Navigation -->
         <ul id="nav-bar-links" class="hidden-xs hidden-sm">
           <li>
@@ -22,7 +22,15 @@
           <li>
             <a>Contact<span class="nav-link-underline"></span></a>
           </li>
-          <!-- <button>Résumé</button> -->
+          <div class="switch-container">
+            <div class="switch">
+              <input type="radio" name="switch-bar" id="en" checked />
+              <input type="radio" name="switch-bar" id="ar" />
+              <label for="en">EN</label>
+              <label for="ar">AR</label>
+              <span class="toggle"></span>
+            </div>
+          </div>
         </ul>
         <!-- Mobile Navigaton -->
         <div class="visible-xs visible-sm">
@@ -44,348 +52,292 @@
           <li>
             <div class="nav-li-container underline-sm"><a>Contact</a></div>
           </li>
-          <!-- <button>Résumé</button> -->
+          <div class="switch-container">
+            <div class="switch">
+              <input type="radio" name="switch-side" id="en" checked />
+              <input type="radio" name="switch-side" id="ar" />
+              <label for="en">EN</label>
+              <label for="ar">AR</label>
+              <span class="toggle"></span>
+            </div>
+          </div>
         </ul>
       </aside>
     </nav>
     <!-- End Navigation -->
-    <!-- Start Content -->
-    <div class="sections-wrapper">
-      <div class="container">
-        <!-- Intro Section -->
-        <section class="fade-in">
-          <span id="intro-section-img"></span>
-          <div class="lg-heading-container underline-lg">
-            <h1>Hi, I&#8217;m Dania!</h1>
-            <h3>Frontend Developer & Designer</h3>
-            <!-- <button>My Résumé</button> -->
-          </div>
-        </section>
-      </div>
-      <div class="container">
-        <!-- About Section -->
-        <section>
-          <div id="about-container">
-            <div class="sm-heading-container fade-in">
-              <h2 class="underline-md">About Me</h2>
-            </div>
-            <div class="p-body">
-              <p class="fade-in">
-                I&#8217;m Dania Alnahdi, a student from Bahrain pursuing a BS in
-                Computer Science and Design in Boston, MA. I&#8217;m interested
-                in web and software development, inclusive and human-centered
-                technology, and interactive (and pretty) user interfaces.
-              </p>
-              <p class="fade-in">
-                Thanks to my coursework at
-                <a
-                  href="https://www.northeastern.edu/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="a-underline"
-                  >Northeastern University</a
-                >, industry experience at
-                <a
-                  href="https://www.asicsdigital.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="a-underline"
-                  >Asics Digital</a
-                >
-                and
-                <a
-                  href="https://www.mfs.com/en-us/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="a-underline"
-                  >MFS</a
-                >, and the numerious internet rabbit holes I tumble into,
-                I&#8217;m always exploring new skills from both the development
-                and design worlds.
-              </p>
-              <p class="fade-in">
-                When I&#8217;m not behind my computer, you&#8217;ll likely find
-                me advocating for causes I&#8217;m passionate about, or
-                searching for a cat to pet.
-              </p>
-            </div>
-          </div>
-          <ul class="list-grid">
-            <li class="list-card fade-in">
-              <div class="icon">
-                <i class="fas fa-code"></i>
-              </div>
-              <ul>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>CSS/SCSS</li>
-              </ul>
-            </li>
-            <li class="list-card fade-in">
-              <div class="icon">
-                <i class="fas fa-pen-nib"></i>
-              </div>
-              <ul>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-                <li>Figma</li>
-              </ul>
-            </li>
-            <li class="list-card fade-in">
-              <div class="icon">
-                <i class="fas fa-lightbulb"></i>
-              </div>
-              <ul>
-                <li>Object-Oriented Design</li>
-                <li>UX/UI Design</li>
-                <li>Brand Design</li>
-              </ul>
-            </li>
-            <li class="list-card fade-in">
-              <div class="icon">
-                <i class="fas fa-tools"></i>
-              </div>
-              <ul>
-                <li>Git & GitHub</li>
-                <li>Command Line</li>
-                <li>Graphics Tablet</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="container">
-        <!-- Projects Section -->
-        <section>
-          <div id="projects-container">
-            <div class="sm-heading-container fade-in">
-              <h2 class="underline-md">What I've Worked On</h2>
-            </div>
-          </div>
-          <ul class="info-grid">
-            <li class="fade-in">
-              <div class="info-card">
-                <div class="info-body">
-                  <div class="info-content">
-                    <label>Website</label>
-                    <div class="info-heading">
-                      <h4 class="underline-sm">Personal Website</h4>
-                    </div>
-                    <p>
-                      This very website! My goal was to create a responsive
-                      website from scratch using modern JavaScript tooling. I
-                      also added my own illustrations for a more personalized
-                      feel.
-                    </p>
-                  </div>
-                  <div class="info-links">
-                    <a
-                      href="https://github.com/daniaalnahdi/personal-website"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="info-footer">
-                  <p>JS • SCSS • Webpack • Illustrator</p>
-                </div>
-              </div>
-            </li>
-            <li class="fade-in">
-              <div class="info-card">
-                <div class="info-body">
-                  <div class="info-content">
-                    <label>Web Application</label>
-                    <div class="info-heading">
-                      <h4 class="underline-sm">Build for Black Lives</h4>
-                    </div>
-                    <p>
-                      An online platform that connects Black businesses and
-                      organizations to developers and creatives offering pro
-                      bono services. I had the pleasure of kickstarting and
-                      collaborating on this initiative as an organizer for
-                      <a
-                        href="https://buildforblacklives.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >HackBeanpot</a
-                      >!
-                    </p>
-                  </div>
-                  <div class="info-links">
-                    <a
-                      href="https://buildforblacklives.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                    <a
-                      href="https://github.com/HackBeanpot/build4blm"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="info-footer">
-                  <p>React • Airtable API</p>
-                </div>
-              </div>
-            </li>
-            <li class="fade-in">
-              <div class="info-card">
-                <div class="info-body">
-                  <div class="info-content">
-                    <label>Web Application</label>
-                    <div class="info-heading">
-                      <h4 class="underline-sm">Eco Eateries</h4>
-                    </div>
-                    <p>
-                      This winning hackathon project is a goal-tracker for
-                      restaurants to adopt sustainable business practices. As
-                      the only frontend developer on the team, I was in charge
-                      of building the user interface, which included an
-                      interactive Kanban board.
-                    </p>
-                  </div>
-                  <div class="info-links">
-                    <a
-                      href="https://github.com/daniaalnahdi/hftp-frontend"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="info-footer">
-                  <p>React • Python • SQL • Bulma</p>
-                </div>
-              </div>
-            </li>
-            <li class="fade-in">
-              <div class="info-card">
-                <div class="info-body">
-                  <div class="info-content">
-                    <label>Mobile Application</label>
-                    <div class="info-heading">
-                      <h4 class="underline-sm">Saltwater Classroom</h4>
-                    </div>
-                    <p>
-                      An educational mobile app for kids to learn about ocean
-                      conservation, created for nonprofit Saltwater Classroom. I collaborated on designing and building the
-                      frontend as a part of
-                      <a
-                        href="https://scout.camd.northeastern.edu/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Scout</a
-                      >, Northeastern University's student-led design studio.
-                    </p>
-                  </div>
-                  <div class="info-links">
-                    <a
-                      href="https://scout.camd.northeastern.edu/case-studies/saltwater-classroom"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="far fa-file-alt"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="info-footer">
-                  <p>React Native • Expo • Figma</p>
-                </div>
-              </div>
-            </li>
-            <li class="fade-in">
-              <div class="info-card">
-                <div class="info-body">
-                  <div class="info-content">
-                    <label>Browser Extension</label>
-                    <div class="info-heading">
-                      <h4 class="underline-sm no-lowercase">reCursor</h4>
-                    </div>
-                    <p>
-                      This hackathon project is a fun Google Chrome extension
-                      that changes your browser&#8217;s cursor to an icon from
-                      any category you pick. Made it to top 10 projects!
-                    </p>
-                  </div>
-                  <div class="info-links">
-                    <a
-                      href="https://github.com/daniaalnahdi/reCursor"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="info-footer">
-                  <p>HTML • CSS • JS • Photoshop</p>
-                </div>
-              </div>
-            </li>
-            <li class="fade-in">
-              <div class="info-card">
-                <div class="info-body">
-                  <div class="info-content">
-                    <label>Desktop Game</label>
-                    <div class="info-heading">
-                      <h4 class="underline-sm">Space Explorer</h4>
-                    </div>
-                    <p>
-                      My first venture into creative coding: a light-hearted
-                      space adventure game inspired by 8-bit arcade games. I had
-                      a lot of fun setting up the scoreboard functionality, and
-                      also with making the tiny spaceships!
-                    </p>
-                  </div>
-                  <div class="info-links">
-                    <a
-                      href="https://github.com/daniaalnahdi/Space-Explorer"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="info-footer">
-                  <p>Java • Processing • Photoshop</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="container">
-        <!-- Contact Section -->
-        <section class="fade-in">
-          <span id="contact-section-img"></span>
-          <div class="lg-heading-container underline-lg">
-            <h1>Say hi!</h1>
-            <h3>
-              Contact me at
-              <a
-                href="mailto:alnahdi.d@northeastern.edu"
-                target="_top"
-                class="a-underline"
-                >alnahdi.d@northeastern.edu</a
-              >
-            </h3>
-          </div>
-        </section>
-      </div>
+    <!-- Start Sections -->
+    <div class="container">
+      <!-- Intro Section -->
+      <section id="intro-section" class="fade-in">
+        <span id="intro-section-img"></span>
+        <div class="lg-heading-container underline-lg">
+          <h1 data-translate="intro-heading"></h1>
+          <h3 data-translate="intro-subheading"></h3>
+        </div>
+      </section>
     </div>
+    <div class="container">
+      <!-- About Section -->
+      <section id="about-section">
+        <div id="about-bio-container">
+          <div class="sm-heading-container fade-in">
+            <h2 class="underline-md" data-translate="about-heading"></h2>
+          </div>
+          <div class="p-body">
+            <p class="fade-in" data-translate="about-bio-1"></p>
+            <p class="fade-in" data-translate="about-bio-2"></p>
+            <p class="fade-in" data-translate="about-bio-3"></p>
+          </div>
+        </div>
+        <ul class="list-grid">
+          <li class="list-card fade-in">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <ul>
+              <li lang="en" data-translate="about-skills-code-1"></li>
+              <li lang="en" data-translate="about-skills-code-2"></li>
+              <li lang="en" data-translate="about-skills-code-3"></li>
+            </ul>
+          </li>
+          <li class="list-card fade-in">
+            <div class="icon">
+              <i class="fas fa-pen-nib"></i>
+            </div>
+            <ul>
+              <li lang="en" data-translate="about-skills-design-1"></li>
+              <li lang="en" data-translate="about-skills-design-2"></li>
+              <li lang="en" data-translate="about-skills-design-3"></li>
+            </ul>
+          </li>
+          <li class="list-card fade-in">
+            <div class="icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <ul>
+              <li data-translate="about-skills-concepts-1"></li>
+              <li data-translate="about-skills-concepts-2"></li>
+              <li data-translate="about-skills-concepts-3"></li>
+            </ul>
+          </li>
+          <li class="list-card fade-in">
+            <div class="icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <ul>
+              <li lang="en" data-translate="about-skills-tools-1"></li>
+              <li lang="en" data-translate="about-skills-tools-2"></li>
+              <li data-translate="about-skills-tools-3"></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="container">
+      <!-- Projects Section -->
+      <section id="projects-section">
+        <div id="projects-container">
+          <div class="sm-heading-container fade-in">
+            <h2 class="underline-md" data-translate="projects-heading"></h2>
+          </div>
+        </div>
+        <ul class="info-grid">
+          <li class="fade-in">
+            <div class="info-card">
+              <div class="info-body">
+                <div class="info-content">
+                  <label data-translate="projects-project1-type"></label>
+                  <div class="info-heading">
+                    <h4
+                      class="underline-sm"
+                      data-translate="projects-project1-name"
+                    ></h4>
+                  </div>
+                  <p data-translate="projects-project1-description"></p>
+                </div>
+                <div class="info-links">
+                  <a
+                    href="https://github.com/daniaalnahdi/personal-website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info-footer">
+                <p data-translate="projects-project1-tech"></p>
+              </div>
+            </div>
+          </li>
+          <li class="fade-in">
+            <div class="info-card">
+              <div class="info-body">
+                <div class="info-content">
+                  <label data-translate="projects-project2-type"></label>
+                  <div class="info-heading">
+                    <h4
+                      class="underline-sm"
+                      lang="en"
+                      data-translate="projects-project2-name"
+                    ></h4>
+                  </div>
+                  <p data-translate="projects-project2-description"></p>
+                </div>
+                <div class="info-links">
+                  <a
+                    href="https://buildforblacklives.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/HackBeanpot/build4blm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info-footer">
+                <p data-translate="projects-project2-tech"></p>
+              </div>
+            </div>
+          </li>
+          <li class="fade-in">
+            <div class="info-card">
+              <div class="info-body">
+                <div class="info-content">
+                  <label data-translate="projects-project3-type"></label>
+                  <div class="info-heading">
+                    <h4
+                      class="underline-sm"
+                      lang="en"
+                      data-translate="projects-project3-name"
+                    ></h4>
+                  </div>
+                  <p data-translate="projects-project3-description"></p>
+                </div>
+                <div class="info-links">
+                  <a
+                    href="https://github.com/daniaalnahdi/hftp-frontend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info-footer">
+                <p data-translate="projects-project3-tech"></p>
+              </div>
+            </div>
+          </li>
+          <li class="fade-in">
+            <div class="info-card">
+              <div class="info-body">
+                <div class="info-content">
+                  <label data-translate="projects-project4-type"></label>
+                  <div class="info-heading">
+                    <h4
+                      class="underline-sm"
+                      lang="en"
+                      data-translate="projects-project4-name"
+                    ></h4>
+                  </div>
+                  <p data-translate="projects-project4-description"></p>
+                </div>
+                <div class="info-links">
+                  <a
+                    href="https://scout.camd.northeastern.edu/case-studies/saltwater-classroom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="far fa-file-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info-footer">
+                <p data-translate="projects-project4-tech"></p>
+              </div>
+            </div>
+          </li>
+          <li class="fade-in">
+            <div class="info-card">
+              <div class="info-body">
+                <div class="info-content">
+                  <label data-translate="projects-project5-type"></label>
+                  <div class="info-heading">
+                    <h4
+                      class="underline-sm no-lowercase"
+                      lang="en"
+                      data-translate="projects-project5-name"
+                    ></h4>
+                  </div>
+                  <p data-translate="projects-project5-description"></p>
+                </div>
+                <div class="info-links">
+                  <a
+                    href="https://github.com/daniaalnahdi/reCursor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info-footer">
+                <p data-translate="projects-project5-tech"></p>
+              </div>
+            </div>
+          </li>
+          <li class="fade-in">
+            <div class="info-card">
+              <div class="info-body">
+                <div class="info-content">
+                  <label data-translate="projects-project6-type"></label>
+                  <div class="info-heading">
+                    <h4
+                      class="underline-sm"
+                      lang="en"
+                      data-translate="projects-project6-name"
+                    ></h4>
+                  </div>
+                  <p data-translate="projects-project6-description"></p>
+                </div>
+                <div class="info-links">
+                  <a
+                    href="https://github.com/daniaalnahdi/Space-Explorer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="info-footer">
+                <p data-translate="projects-project6-tech"></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="container">
+      <!-- Contact Section -->
+      <section id="contact-section" class="fade-in">
+        <span id="contact-section-img"></span>
+        <div class="lg-heading-container underline-lg">
+          <h1 data-translate="contact-heading"></h1>
+          <h3 data-translate="contact-subheading"></h3>
+        </div>
+      </section>
+    </div>
+    <!-- End Sections -->
     <!-- Start Footer-->
-    <footer>
+    <footer lang="en">
       <div class="container">
         <ul>
           <li>

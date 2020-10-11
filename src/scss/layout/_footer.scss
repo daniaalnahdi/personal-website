@@ -2,6 +2,7 @@
 
 footer {
   background: $shadow;
+  padding: 2em 0;
 
   div {
     padding: 1em;
@@ -14,6 +15,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 0.5em;
+    margin-bottom: 2em;
   }
 
   li {

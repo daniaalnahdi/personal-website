@@ -1,0 +1,79 @@
+{
+  "intro": {
+    "heading": "Hi, I’m Dania!",
+    "subheading": "Developer + Designer"
+  },
+  "about": {
+    "heading": "About Me",
+    "bio": {
+      "1": "I’m Dania Alnahdi, a student from Bahrain pursuing a BS in Computer Science and Design in Boston, MA. I’m interested in web and software development, inclusive and human-centered technology, and interactive (and pretty) user interfaces.",
+      "2": "Thanks to my coursework at <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a>, industry experience at <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>Asics Digital</a> and <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>, and the numerious internet rabbit holes I tumble into, I’m always exploring new skills from both the development and design worlds.",
+      "3": "When I’m not behind my computer, you’ll likely find me advocating for causes I’m passionate about, discovering plant-based food joints, or petting my cat."
+    },
+    "skills": {
+      "code": {
+        "1": "JavaScript",
+        "2": "React",
+        "3": "CSS/SCSS"
+      },
+      "design": {
+        "1": "Adobe Illustrator",
+        "2": "Adobe XD",
+        "3": "Figma"
+      },
+      "concepts": {
+        "1": "Object-Oriented Design",
+        "2": "UX/UI Design",
+        "3": "Design Thinking"
+      },
+      "tools": {
+        "1": "Git & GitHub",
+        "2": "Command Line",
+        "3": "Graphics Tablet"
+      }
+    }
+  },
+  "projects": {
+    "heading": "What I've Worked On",
+    "project1": {
+      "type": "Website",
+      "name": "Personal Website",
+      "description": "This very website! My goal was to create a responsive website from scratch using modern JavaScript tooling. I also added my own illustrations for a more personalized feel.",
+      "tech": "JS • SCSS • Webpack • Illustrator"
+    },
+    "project2": {
+      "type": "Web Application",
+      "name": "Build for Black Lives",
+      "description": "An online platform that connects Black businesses and organizations to developers and creatives offering pro bono services. I had the pleasure of kickstarting and collaborating on this initiative as an organizer for <a href='https://buildforblacklives.com/' target='_blank' rel='noopener noreferrer'>HackBeanpot</a>!",
+      "tech": "React • Airtable API"
+    },
+    "project3": {
+      "type": "Web Application",
+      "name": "Eco Eateries",
+      "description": "This winning hackathon project is a goal-tracker for restaurants to adopt sustainable business practices. As the only frontend developer on the team, I was in charge of building the user interface, which included an interactive Kanban board.",
+      "tech": "React • Python • SQL"
+    },
+    "project4": {
+      "type": "Mobile Application",
+      "name": "Saltwater Classroom",
+      "description": "An educational mobile app for kids to learn about ocean conservation, created for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>. I collaborated on designing and building the frontend as a part of <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer'> Scout</a>, Northeastern University's student-led design studio.",
+      "tech": "React Native • Expo • Figma"
+    },
+    "project5": {
+      "type": "Browser Extension",
+      "name": "reCursor",
+      "description": "This hackathon project is a fun Google Chrome extension that changes your browser’s cursor to an icon from any category you pick. Made it to top 10 projects!",
+      "tech": "JS • CSS • Chrome API"
+    },
+    "project6": {
+      "type": "Desktop Game",
+      "name": "Space Explorer",
+      "description": "My first venture into creative coding: a light-hearted space adventure game inspired by 8-bit arcade games. I had a lot of fun setting up the scoreboard functionality, and also with designing the tiny spaceships!",
+      "tech": "Java • Processing • Photoshop"
+    }
+  },
+  "contact": {
+    "heading": "Say hi!",
+    "subheading": "Contact me at <a href='mailto:alnahdi.d@northeastern.edu' target='_top'  rel='noopener noreferrer'>alnahdi.d@northeastern.edu</a >"
+  }
+}

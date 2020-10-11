@@ -18,14 +18,14 @@
   padding: 1em;
 }
 
-#about-container {
+#about-bio-container {
   p {
     margin: 1.5em auto;
   }
 }
 
 @media ($md-screen) {
-  #about-container {
+  #about-bio-container {
     display: flex;
     flex-direction: row;
 
@@ -44,7 +44,7 @@
 }
 
 @media ($lg-screen) {
-  #about-container {
+  #about-bio-container {
     .p-body {
       font-size: 1rem;
     }

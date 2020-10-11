@@ -8,57 +8,65 @@ section {
   flex-direction: column;
 }
 
-.sections-wrapper {
-  .container:nth-of-type(2) > section {
-    padding-bottom: 7em;
-  }
+#intro-section {
+  margin-top: 1em;
+}
 
-  .container:first-of-type > section,
-  .container:last-of-type > section {
-    align-items: center;
+#about-section {
+  padding-bottom: 7em;
+}
+
+#intro-section,
+#contact-section {
+  align-items: center;
+}
+
+#intro-section-img,
+#contact-section-img {
+  margin-bottom: 1.5em;
+}
+
+#intro-section-img {
+  @include section-img($intro-img, $sm-img);
+}
+
+#contact-section-img {
+  @include section-img($contact-img, $xs-img);
+}
+
+@media ($sm-screen) {
+  #intro-section-img {
+    @include section-img($intro-img, $md-img);
+  }
+}
+
+@media ($md-screen) {
+  #intro-section {
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-top: 0;
   }
 
   #intro-section-img {
-    @include section-img($intro-img, $sm-img);
+    @include section-img($intro-img, $md-img);
+    margin: 0;
   }
 
   #contact-section-img {
-    @include section-img($contact-img, $xs-img);
+    @include section-img($contact-img, $sm-img);
+  }
+}
+
+@media ($lg-screen) {
+  #intro-section,
+  #contact-section {
+    padding: 0em;
   }
 
-  @media ($sm-screen) {
-    #intro-section-img {
-      @include section-img($intro-img, $md-img);
-    }
-  }
-
-  @media ($md-screen) {
-    .container:first-of-type > section {
-      justify-content: space-around;
-      flex-direction: row-reverse;
-      text-align: left;
-    }
-
-    #intro-section-img {
-      @include section-img($intro-img, $md-img);
-      margin: 0;
-    }
-
-    #contact-section-img {
-      @include section-img($contact-img, $sm-img);
-    }
-  }
-
-  @media ($lg-screen) {
-    .container:first-of-type > section,
-    .container:last-of-type > section {
-      padding: 0em;
-    }
-
-    #intro-section-img {
-      @include section-img($intro-img, $lg-img);
-      margin: 0;
-    }
+  #intro-section-img {
+    @include section-img($intro-img, $lg-img);
+    margin: 0;
   }
 }
 

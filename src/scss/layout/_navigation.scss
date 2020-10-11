@@ -51,6 +51,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-grow: 1;
 
     li {
       padding: 1.1em;
@@ -71,6 +72,7 @@ nav {
     }
 
     .nav-link-underline {
+      position: absolute;
       background-image: url($underline-img);
       background-repeat: no-repeat;
       background-position: center bottom;
@@ -173,7 +175,7 @@ aside {
     li {
       text-align: left;
       text-transform: uppercase;
-      font-size: 2em;
+      font-size: 1.75rem;
       margin: 1em;
     }
   }
@@ -208,6 +210,141 @@ aside {
   height: 100%;
 }
 
-/* End Mobile Navigation Navigation */
+/* End Mobile Navigation */
+
+/* Start Language Switch */
+
+$switch-width-lg: 80px;
+$switch-height-lg: 40px;
+$toggle-size-lg: 32px;
+
+$switch-width-sm: 60px;
+$switch-height-sm: 30px;
+$toggle-size-sm: 22px;
+
+.switch-container {
+  width: $switch-width-sm;
+  margin: 2rem 4rem;
+
+  input[type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+}
+
+.switch {
+  background: $accent-light;
+  border-radius: 32px;
+  cursor: pointer;
+  display: inline-block;
+  height: $switch-height-lg;
+  position: relative;
+  width: $switch-width-lg;
+}
+
+.switch label {
+  color: $accent-dark;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 250%;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+  width: $switch-width-lg - $toggle-size-lg - 4px;
+}
+
+.switch label:nth-of-type(1) {
+  left: -75%;
+  position: absolute;
+  text-align: right;
+}
+
+.switch label:nth-of-type(2) {
+  position: absolute;
+  right: -75%;
+  text-align: left;
+}
+
+.switch input {
+  cursor: pointer;
+  height: $switch-height-lg;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 80px;
+  z-index: 2;
+}
+
+.switch input:checked ~ label:nth-of-type(1) {
+  color: $accent-dark;
+  font-weight: 500;
+}
+.switch input:checked ~ label:nth-of-type(2) {
+  color: $secondary;
+}
+
+.switch input ~ :checked ~ label:nth-of-type(1) {
+  color: $secondary;
+}
+.switch input ~ :checked ~ label:nth-of-type(2) {
+  color: $accent-dark;
+  font-weight: 500;
+}
+
+.switch input:checked ~ .toggle {
+  left: 4px;
+}
+
+.switch input ~ :checked ~ .toggle {
+  left: $switch-width-lg - $toggle-size-lg - 4px;
+}
+
+.switch input:checked {
+  z-index: 0;
+}
+
+.toggle {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  background: $bg-color;
+  border-radius: 50%;
+  height: $toggle-size-lg;
+  width: $toggle-size-lg;
+  transition: left 0.2s ease;
+  z-index: 1;
+}
+
+@media ($md-screen) {
+  .switch-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: $switch-width-sm;
+  }
+
+  .switch {
+    height: $switch-height-sm;
+    width: $switch-width-sm;
+  }
+
+  .switch label {
+    font-size: 0.85rem;
+    line-height: 250%;
+    width: $switch-width-sm - $toggle-size-sm - 4px;
+  }
+
+  .switch input {
+    height: $switch-height-sm;
+  }
+
+  .switch input ~ :checked ~ .toggle {
+    left: $switch-width-sm - $toggle-size-sm - 4px;
+  }
+
+  .toggle {
+    height: $toggle-size-sm;
+    width: $toggle-size-sm;
+  }
+}
 
 /* End Navigation */
