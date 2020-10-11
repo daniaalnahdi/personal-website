@@ -8,6 +8,10 @@ section {
   flex-direction: column;
 }
 
+#intro-section {
+  margin-top: 1em;
+}
+
 #about-section {
   padding-bottom: 7em;
 }
@@ -36,6 +40,7 @@ section {
     justify-content: space-around;
     flex-direction: row-reverse;
     text-align: left;
+    margin-top: 0;
   }
 
   #intro-section-img {

@@ -47,8 +47,8 @@ export const NavStates = (() => {
     navLinks = document.querySelector('#nav-side-links'),
     navTitle = document.querySelector('#nav-heading'),
     bar = document.querySelector('nav'),
-    englishToggle = document.querySelector('input[id="en"]'),
-    arabicToggle = document.querySelector('input[id="ar"]');
+    englishToggles = document.querySelectorAll('input[id="en"]'),
+    arabicToggles = document.querySelectorAll('input[id="ar"]');
 
   let scrollPos = 0;
 
@@ -137,20 +137,21 @@ export const NavStates = (() => {
     }
   };
 
-  const setLanguageToggles = () => {
+  // Update toggles based on current language
+  const updateLanguageToggles = () => {
     const currentLanguage = document.documentElement.lang;
+    const togglesToUpdate =
+      currentLanguage == 'en' ? englishToggles : arabicToggles;
 
-    if (currentLanguage == 'en') {
-      englishToggle.checked = true;
-    } else {
-      arabicToggle.checked = true;
-    }
+    togglesToUpdate.forEach((toggle) => (toggle.checked = true));
   };
 
   // Toggle Language between Arabic and English
   const toggleLanguage = (e) => {
     const languageCode = e.target.id;
     Translator.changeLanguage(languageCode);
+    // Sync up desktop/mobile toggles
+    updateLanguageToggles();
   };
 
   // Sets up event listeners
@@ -158,10 +159,13 @@ export const NavStates = (() => {
     icon.addEventListener('click', toggleNav);
     window.addEventListener('resize', closeNav);
     window.addEventListener('scroll', Utils.debounce(toggleBar));
-    window.addEventListener('DOMContentLoaded', setLanguageToggles());
-
-    englishToggle.addEventListener('change', (e) => toggleLanguage(e));
-    arabicToggle.addEventListener('change', (e) => toggleLanguage(e));
+    window.addEventListener('DOMContentLoaded', updateLanguageToggles());
+    englishToggles.forEach((toggle) =>
+      toggle.addEventListener('change', (e) => toggleLanguage(e))
+    );
+    arabicToggles.forEach((toggle) =>
+      toggle.addEventListener('change', (e) => toggleLanguage(e))
+    );
   };
 
   return {

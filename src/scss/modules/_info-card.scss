@@ -120,6 +120,13 @@
   }
 }
 
+.rtl {
+  .info-content {
+    margin-right: 0;
+    margin-left: 1em;
+  }
+}
+
 @media ($sm-screen) {
   .info-card {
     height: 26em;
