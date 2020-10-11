@@ -59,9 +59,9 @@ export const Translator = (() => {
         element.prepend(textNode);
 
         // Change direction of English text in Arabic to left-to-right if specified
-        if (rtl && !!element.lang && element.lang == 'en') {
-          element.classList.add('ltr');
-        }
+        // if (rtl && !!element.lang && element.lang == 'en') {
+        //   element.classList.add('ltr');
+        // }
       }
     });
   };

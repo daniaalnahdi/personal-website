@@ -21,6 +21,11 @@ section {
   align-items: center;
 }
 
+#intro-section-img,
+#contact-section-img {
+  margin-bottom: 1.5em;
+}
+
 #intro-section-img {
   @include section-img($intro-img, $sm-img);
 }

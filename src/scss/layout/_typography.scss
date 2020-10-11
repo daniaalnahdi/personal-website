@@ -1,4 +1,44 @@
 /* Start Typography */
+/* Start Arabic Typography Base */
+.rtl {
+  direction: rtl;
+  text-align: right;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $ar-font, sans-serif;
+  }
+
+  #about-section {
+    p {
+      font-family: $ar-font, sans-serif;
+      font-weight: 400;
+    }
+  }
+
+  .list-card {
+    font-family: $ar-font, sans-serif;
+    font-weight: 400;
+  }
+
+  .info-card {
+    .info-content {
+      p,
+      label {
+        font-family: $ar-font, sans-serif;
+        font-weight: 400;
+      }
+
+      label {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+/* Start Typography */
 
 html,
 body {
@@ -6,16 +46,30 @@ body {
 }
 
 body {
-  font-family: $body-font, sans-serif;
   color: $primary;
 }
 
+body,
+:lang(en) {
+  font-family: $body-font, sans-serif;
+}
+
 h1,
-h2 {
+h2,
+h1:lang(en),
+h2:lang(en),
+h1 span:lang(en),
+h2 span:lang(en) {
   font-family: $h-font, sans-serif;
 }
 
-h3 {
+h1 {
+  font-size: 2.2em;
+}
+
+h3,
+h3:lang(en),
+h3 span:lang(en) {
   line-height: 1.5em;
 }
 
@@ -27,7 +81,11 @@ h3 {
 }
 
 h3,
-h4 {
+h4,
+h3:lang(en),
+h4:lang(en),
+h3 span:lang(en),
+h4 span:lang(en) {
   font-family: $sm-h-font, sans-serif;
 }
 
@@ -42,7 +100,8 @@ h4 {
   text-transform: lowercase;
 }
 
-p {
+p,
+p span:lang(en) {
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   line-height: 1.5em;
@@ -50,7 +109,6 @@ p {
 
 a {
   color: $accent-dark;
-
   @include transition(0.3);
 }
 
@@ -62,25 +120,21 @@ a:hover {
   text-transform: none;
 }
 
-.rtl {
-  direction: rtl;
-  text-align: right;
-}
-
-
-.ltr {
-  direction: ltr;
-  text-align: left;
-}
-
 #about-section a,
-#contact-section a {
+#contact-section a,
+#about-section a span:lang(en),
+#contact-section a span:lang(en) {
   margin-bottom: 2px;
   margin-left: 1px;
   margin-right: 1px;
   border-bottom: 1.5px solid $accent-light;
   font-weight: 500;
   font-family: 'Work Sans', sans-serif;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
 }
 
 /* End Typography */
