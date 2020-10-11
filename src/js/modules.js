@@ -47,7 +47,8 @@ export const NavStates = (() => {
     navLinks = document.querySelector('#nav-side-links'),
     navTitle = document.querySelector('#nav-heading'),
     bar = document.querySelector('nav'),
-    translateToggles = document.querySelectorAll('.translate-toggle');
+    englishToggle = document.querySelector('input[id="en"]'),
+    arabicToggle = document.querySelector('input[id="ar"]');
 
   let scrollPos = 0;
 
@@ -136,10 +137,20 @@ export const NavStates = (() => {
     }
   };
 
+  const setLanguageToggles = () => {
+    const currentLanguage = document.documentElement.lang;
+
+    if (currentLanguage == 'en') {
+      englishToggle.checked = true;
+    } else {
+      arabicToggle.checked = true;
+    }
+  };
+
   // Toggle Language between Arabic and English
-  const toggleLanguage = () => {
-    const nextLanguage = document.documentElement.lang == 'en' ? 'ar' : 'en';
-    Translator.changeLanguage(nextLanguage);
+  const toggleLanguage = (e) => {
+    const languageCode = e.target.id;
+    Translator.changeLanguage(languageCode);
   };
 
   // Sets up event listeners
@@ -147,9 +158,10 @@ export const NavStates = (() => {
     icon.addEventListener('click', toggleNav);
     window.addEventListener('resize', closeNav);
     window.addEventListener('scroll', Utils.debounce(toggleBar));
-    translateToggles.forEach((toggle) =>
-      toggle.addEventListener('click', toggleLanguage)
-    );
+    window.addEventListener('DOMContentLoaded', setLanguageToggles());
+
+    englishToggle.addEventListener('change', (e) => toggleLanguage(e));
+    arabicToggle.addEventListener('change', (e) => toggleLanguage(e));
   };
 
   return {

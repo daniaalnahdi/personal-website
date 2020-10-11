@@ -41,6 +41,11 @@ export const Translator = (() => {
 
   // Loops through selected language data and renders text
   const translate = () => {
+    const body = document.querySelector('body');
+    const rtl = selectedLanguage.code == 'ar';
+
+    rtl ? body.classList.add('rtl') : body.classList.remove('rtl');
+
     elements.forEach((element) => {
       const keys = element.dataset.translate.split('-');
       const text = keys.reduce(
@@ -53,16 +58,9 @@ export const Translator = (() => {
         textNode.innerHTML = text;
         element.prepend(textNode);
 
-        // Change direction to right-to-left for Arabic
-        if (
-          selectedLanguage.code == 'ar' &&
-          !element.lang &&
-          element.lang !== 'en'
-        ) {
-          element.classList.add('rtl');
-        } else {
-          //Reset direction
-          element.classList.remove('rtl');
+        // Change direction of English text in Arabic to left-to-right if specified
+        if (rtl && !!element.lang && element.lang == 'en') {
+          element.classList.add('ltr');
         }
       }
     });
