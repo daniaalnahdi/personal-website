@@ -35,6 +35,8 @@ export const Translator = (() => {
       // Default to English if language not found
       selectedLanguage = { code: 'en', data: languagesData.get('en') };
     }
+
+    setLanguageParams();
   };
 
   const setLanguageParams = () => {

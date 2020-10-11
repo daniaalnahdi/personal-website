@@ -44,7 +44,7 @@
     "project2": {
       "type": "Web Application",
       "name": "Build for Black Lives",
-      "description": "An online platform that connects Black businesses and organizations to developers and creatives offering pro bono services. I had the pleasure of kickstarting and collaborating on this initiative as an organizer for <a href='https://buildforblacklives.com/' target='_blank' rel='noopener noreferrer'>HackBeanpot</a>!",
+      "description": "An online platform that connects Black businesses and organizations to developers and creatives offering pro bono services. I was able to kickstart and collaborate on this initiative as an organizer for <a href='https://hackbeanpot.com/' target='_blank' rel='noopener noreferrer'>HackBeanpot</a>!",
       "tech": "React • Airtable API"
     },
     "project3": {
