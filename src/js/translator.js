@@ -42,7 +42,7 @@ export const Translator = (() => {
   // Loops through selected language data and renders text
   const translate = () => {
     elements.forEach((element) => {
-      const keys = element.dataset.translate.split('.');
+      const keys = element.dataset.translate.split('-');
       const text = keys.reduce(
         (accumulator, i) => accumulator[i],
         selectedLanguage.data
@@ -52,6 +52,18 @@ export const Translator = (() => {
         const textNode = document.createElement('SPAN');
         textNode.innerHTML = text;
         element.prepend(textNode);
+
+        // Change direction to right-to-left for Arabic
+        if (
+          selectedLanguage.code == 'ar' &&
+          !element.lang &&
+          element.lang !== 'en'
+        ) {
+          element.classList.add('rtl');
+        } else {
+          //Reset direction
+          element.classList.remove('rtl');
+        }
       }
     });
   };

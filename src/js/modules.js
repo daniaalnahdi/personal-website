@@ -47,7 +47,7 @@ export const NavStates = (() => {
     navLinks = document.querySelector('#nav-side-links'),
     navTitle = document.querySelector('#nav-heading'),
     bar = document.querySelector('nav'),
-    translateToggle = document.getElementById('langbutton');
+    translateToggles = document.querySelectorAll('.translate-toggle');
 
   let scrollPos = 0;
 
@@ -147,7 +147,9 @@ export const NavStates = (() => {
     icon.addEventListener('click', toggleNav);
     window.addEventListener('resize', closeNav);
     window.addEventListener('scroll', Utils.debounce(toggleBar));
-    translateToggle.addEventListener('click', toggleLanguage);
+    translateToggles.forEach((toggle) =>
+      toggle.addEventListener('click', toggleLanguage)
+    );
   };
 
   return {
@@ -172,12 +174,16 @@ export const NavLinks = (() => {
       }
     }, 300);
 
-    document.body.querySelector(`[data-index='${sectionIndex}']`).scrollIntoView();
+    document.body
+      .querySelector(`[data-index='${sectionIndex}']`)
+      .scrollIntoView();
   };
 
   //highlights the link in the nav bar if the link section is viewed
   const highlightNavLink = (sectionIndex, sectionsIndexOffset = 0) => {
-    const section = document.body.querySelector(`[data-index='${sectionIndex}']`),
+    const section = document.body.querySelector(
+        `[data-index='${sectionIndex}']`
+      ),
       link = barLinks[sectionIndex - sectionsIndexOffset].querySelector('a'),
       underline = barLinks[sectionIndex - sectionsIndexOffset].querySelector(
         '.nav-link-underline'

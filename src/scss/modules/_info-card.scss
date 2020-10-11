@@ -62,12 +62,12 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    margin-right: 1em;
 
     .info-heading {
       display: flex;
       flex-direction: column;
-      margin: 1em;
-      margin-left: 0;
+      margin: 1em 0;
 
       h4 {
         font-size: 1.1em;
@@ -131,16 +131,6 @@
     .info-footer {
       p {
         font-size: 0.75rem;
-      }
-    }
-  }
-}
-
-@media ($md-screen) {
-  .info-card {
-    .info-footer {
-      p {
-        font-size: 0.7rem;
       }
     }
   }

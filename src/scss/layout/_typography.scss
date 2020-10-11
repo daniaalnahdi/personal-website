@@ -62,6 +62,11 @@ a:hover {
   text-transform: none;
 }
 
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
 #about-section a,
 #contact-section a {
   margin-bottom: 2px;
