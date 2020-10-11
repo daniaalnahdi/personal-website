@@ -44,7 +44,7 @@
     "project2": {
       "type": "تطبيق ويب",
       "name": "Build for Black Lives",
-      "description": "هذا المشروع التطوعي للتوعية عن العنصرية يجمع أصحاب الأعمال والمنظمات من ذوي البشرة السوداء مع مطورين ومصممين يودون تقديم خدماتهم لهم بالمجان. أتيحت لي فرصة المشاركة في بناء هذا التطبيق كأحد منظمي (هاكاثون) <a href='https://buildforblacklives.com/' target='_blank' rel='noopener noreferrer' lang='en'>HackBeanpot</a>!",
+      "description": "هذا المشروع التطوعي للتوعية عن العنصرية يجمع أصحاب الأعمال والمنظمات من ذوي البشرة السوداء مع مطورين ومصممين يودون تقديم خدماتهم لهم بالمجان. أتيحت لي فرصة المشاركة في بناء هذا التطبيق كأحد منظمي (هاكاثون) <a href='https://hackbeanpot.com/' target='_blank' rel='noopener noreferrer' lang='en'>HackBeanpot</a>!",
       "tech": "React • Airtable API"
     },
     "project3": {
