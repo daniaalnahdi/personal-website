@@ -60,16 +60,16 @@
       "tech": "React • Python • SQL"
     },
     "project5": {
-      "type": "blank",
-      "name": "Cubby",
+      "type": "Web Application",
+      "name": "Security Council Database",
       "description": "blank",
       "tech": "blank"
     },
     "project6": {
-      "type": "Mobile Application",
-      "name": "Saltwater Classroom",
-      "description": "An educational mobile app for kids to learn about ocean conservation, created for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>. I collaborated on designing and building the frontend as a part of <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer'> Scout</a>, Northeastern University's student-led design studio.",
-      "tech": "React Native • Expo • Figma"
+      "type": "blank",
+      "name": "Cubby",
+      "description": "blank",
+      "tech": "blank"
     }
   },
   "contact": {

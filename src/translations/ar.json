@@ -60,16 +60,16 @@
       "tech": "React • Python • SQL"
     },
     "project5": {
-      "type": "blank ",
-      "name": "Cubby",
+      "type": "blank",
+      "name": "قاعدة بيانات لمجلس الأمن",
       "description": "blank",
       "tech": "blank"
     },
     "project6": {
-      "type": "تطبيق موبايل",
-      "name": "Saltwater Classroom",
-      "description": "هذا المشروع هو تطبيق موبايل يهدف لتعليم الأطفال عن علوم المحيطات وأهمية الحفاظ عليها لأجل المنظمة الغير ربحية <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer' lang='en'>Saltwater Classroom</a>. شاركت في تصميم وبناء واجهة المستخدم كعضوة في استوديو التصميم الذي يقوده الطلاب في جامعة (نورث إيسترن)   <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer' lang='en'> Scout</a>.",
-      "tech": "React Native • Expo • Figma"
+      "type": "blank ",
+      "name": "Cubby",
+      "description": "blank",
+      "tech": "blank"
     }
   },
   "contact": {
