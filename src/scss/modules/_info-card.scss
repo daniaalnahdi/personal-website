@@ -141,7 +141,7 @@
 
 @media ($sm-screen) {
   .info-card {
-    height: 26em;
+    height: 29em;
 
     .info-content {
       font-size: 0.9rem;
@@ -151,6 +151,16 @@
       p {
         font-size: 0.75rem;
       }
+    }
+  }
+}
+
+@media ($lg-screen) {
+  .info-card {
+    height: 26em;
+
+    .info-content {
+      font-size: 0.95rem;
     }
   }
 }

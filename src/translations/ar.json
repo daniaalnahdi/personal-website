@@ -7,7 +7,7 @@
     "heading": "نبذة عني",
     "bio": {
       "1": "أنا دانية النهدي، طالبة بحرينية ساعية للحصول على درجة البكالوريوس في علوم الكمبيوتر والتصميم في مدينة بوسطن في الولايات المتحدة. أنا مهتمة بتطوير الويب والبرامج، خصيصاً واجهات المستخدم التفاعلية والجذابة.",
-      "2": "بفضل حصصي الدراسية في جامعة <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a> وخبراتي العملية في <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>Asics Digital</a> و <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>، بالإضافة إلى تصفحي الدائم للويب، أستكشف دائمًا مهارات جديدة من عالمي التطوير والتصميم.",
+      "2": "بفضل حصصي الدراسية في جامعة <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a> وخبراتي العملية في <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> و <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>، بالإضافة إلى تصفحي الدائم للويب، أستكشف دائمًا مهارات جديدة من عالمي التطوير والتصميم.",
       "3": "بعيداً عن البرمجة والتصميم، أحب أن أقضي وقت فراغي في التطلع على القضايا الإنسانية التي تهمني، وإستكشاف أكلات نباتية جديدة، واللعب مع قطتي."
     },
     "skills": {
@@ -28,23 +28,23 @@
       },
       "tools": {
         "1": "Git & GitHub",
-        "2": "Command Line",
-        "3": "تابلت التصميم الرقمي"
+        "2": "تطوير ويب (فل ستاك)",
+        "3": "JAMstack"
       }
     }
   },
   "projects": {
     "heading": "من أعمالي",
     "project1": {
-      "type": "blank",
+      "type": "تطبيق ويب",
       "name": "OneASICS",
-      "description": "blank",
-      "tech": "blank"
+      "description": "أثناء عملي عند <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer' lang='en'>ASICS Digital</a>، عملت بشكل أساسي على <span lang='en'>OneASICS</span>: بوابة التصديق المستخدمة عبر تطبيقات اللياقة البدنية ومواقع التجارة الخاصة بـ <span lang='en'>ASICS</span>.     كنت مسؤولة عن تحديث واجهة التسجيل، والتغيرات التي نفذتها قللت أخطاء المستخدم بنسبة ٣٧٪.",
+      "tech": "JS • CSS • Google Optimize"
     },
     "project2": {
       "type": " موقع ويب",
       "name": "موقعي الخاص",
-      "description": "هذا الموقع نفسه! هدفي من هذا المشروع بناء موقع متجاوب من الصفر دون الإعتماد على أي مكتبات برمجية، ومع إستخدام أدوات تطوير الويب الحديثة. قررت أن أضيف تصاميمي الرقمية لأضع لمستي الخاصة. ",
+      "description": "هذا الموقع نفسه! هدفي من هذا المشروع بناء موقع متجاوب من الصفر دون الإعتماد على أي مكتبات برمجية ومع إستخدام أدوات تطوير الويب الحديثة. قررت أن أضيف تصاميمي الرقمية لأضع لمستي الخاصة. ",
       "tech": "JS • SCSS • Webpack • Illustrator"
     },
     "project3": {
@@ -57,19 +57,19 @@
       "type": "تطبيق ويب",
       "name": "Eco Eateries",
       "description": "هذا المشروع الفائز بمسابقة (هاكاثون) عبارة عن تطبيق لتتبع الأهداف مخصص لأصحاب المطاعم لكي يحفزهم على تبني ممارسات تجارية صديقة للبيئة. كوني مطورة (الفرونت اند) الوحيدة في فريقي، كنت مسؤولة عن بناء واجهة المستخدم، والتي تضمنت لوحة (كانبان) تفاعلية.",
-      "tech": "React • Python • SQL"
+      "tech": "React • Python • MySQL"
     },
     "project5": {
-      "type": "blank",
-      "name": "قاعدة بيانات لمجلس الأمن",
-      "description": "blank",
-      "tech": "blank"
+      "type": "تطبيق ويب",
+      "name": "قاعدة بيانات مجلس الأمن",
+      "description": "في صفي لتصميم قاعدة البيانات، انتهزت الفرصة لتطوير تطبيق (فل ستاك) كامل. باستخدام قاعدة البيانات التي صممها فريقي، قمت ببرمجة ورفع هذا الدليل لبيانات الأمم المتحدة بهدف التوعية عن القضايا العالمية، وتضمن ذلك إنشاء واجهة برمجة تطبيقات <span lang='en'>(API)</span>.      ",
+      "tech": "React • Node.js • MySQL"
     },
     "project6": {
-      "type": "blank ",
+      "type": "بحث + تصميم + تطبيق ويب",
       "name": "Cubby",
-      "description": "blank",
-      "tech": "blank"
+      "description": "مشروعي الجامعي، والذي توّج إكمالي لمواد تصميم الواجهات، هو نظام لإدارة التعلم عن بعد مخصص للطلاب بين ٥-٧ سنوات. كوني مطورة  ضمن فريقي، برمجت عرض توضيحي وتفاعلي لأجل عرض ميزات نظامنا الأساسية والأكثر تميزاً.",
+      "tech": "ٍReact"
     }
   },
   "contact": {
