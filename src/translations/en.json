@@ -7,7 +7,7 @@
     "heading": "About Me",
     "bio": {
       "1": "I’m Dania Alnahdi, a student from Bahrain pursuing a BS in Computer Science and Design in Boston, MA. I’m interested in web and software development, inclusive and human-centered technology, and interactive (and pretty) user interfaces.",
-      "2": "Thanks to my coursework at <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a>, industry experience at <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>Asics Digital</a> and <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>, and the numerious internet rabbit holes I tumble into, I’m always exploring new skills from both the development and design worlds.",
+      "2": "Thanks to my coursework at <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a>, industry experience at <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> and <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>, and the numerious internet rabbit holes I tumble into, I’m always exploring new skills from both the development and design worlds.",
       "3": "When I’m not behind my computer, you’ll likely find me advocating for causes I’m passionate about, discovering plant-based food joints, or petting my cat."
     },
     "skills": {
@@ -28,48 +28,48 @@
       },
       "tools": {
         "1": "Git & GitHub",
-        "2": "Command Line",
-        "3": "Graphics Tablet"
+        "2": "Full Stack Dev",
+        "3": "JAMstack"
       }
     }
   },
   "projects": {
     "heading": "What I've Worked On",
     "project1": {
+      "type": "Web App",
+      "name": "OneASICS",
+      "description": "During my <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> co-op, I primarily worked on OneASICS: the authentication portal used across ASICS' fitness and e-commerce apps. My biggest task was updating the registration's interface and error handling logic, decreasing user errors by 37%.",
+      "tech": "JS • CSS • Google Optimize"
+    },
+    "project2": {
       "type": "Website",
       "name": "Personal Website",
       "description": "This very website! My goal was to create a responsive website from scratch using modern JavaScript tooling. I also added my own illustrations for a more personalized feel.",
       "tech": "JS • SCSS • Webpack • Illustrator"
     },
-    "project2": {
-      "type": "Web Application",
+    "project3": {
+      "type": "Web App",
       "name": "Build for Black Lives",
       "description": "An online platform that connects Black businesses and organizations to developers and creatives offering pro bono services. I was able to kickstart and collaborate on this initiative as an organizer for <a href='https://hackbeanpot.com/' target='_blank' rel='noopener noreferrer'>HackBeanpot</a>!",
       "tech": "React • Airtable API"
     },
-    "project3": {
-      "type": "Web Application",
+    "project4": {
+      "type": "Web App",
       "name": "Eco Eateries",
       "description": "This winning hackathon project is a goal-tracker for restaurants to adopt sustainable business practices. As the only frontend developer on the team, I was in charge of building the user interface, which included an interactive Kanban board.",
-      "tech": "React • Python • SQL"
-    },
-    "project4": {
-      "type": "Mobile Application",
-      "name": "Saltwater Classroom",
-      "description": "An educational mobile app for kids to learn about ocean conservation, created for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>. I collaborated on designing and building the frontend as a part of <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer'> Scout</a>, Northeastern University's student-led design studio.",
-      "tech": "React Native • Expo • Figma"
+      "tech": "React • Python • MySQL"
     },
     "project5": {
-      "type": "Browser Extension",
-      "name": "reCursor",
-      "description": "This hackathon project is a fun Google Chrome extension that changes your browser’s cursor to an icon from any category you pick. Made it to top 10 projects!",
-      "tech": "JS • CSS • Chrome API"
+      "type": "Web App",
+      "name": "Security Council Database",
+      "description": "For my Database Design class, my team created a database using data from the United Nations with the goal of making information on global issues more accessible. To demonstrate our work, I coded and deployed this full-stack, online directory, which included creating an API.",
+      "tech": "React • Node.js • MySQL"
     },
     "project6": {
-      "type": "Desktop Game",
-      "name": "Space Explorer",
-      "description": "My first venture into creative coding: a light-hearted space adventure game inspired by 8-bit arcade games. I had a lot of fun setting up the scoreboard functionality, and also with designing the tiny spaceships!",
-      "tech": "Java • Processing • Photoshop"
+      "type": "Research + Design + Web App",
+      "name": "Cubby",
+      "description": "My Interaction Design senior capstone: a learning management system designed for students ages 5-7 in remote and hybrid classes. As a developer on my team, I worked on a live, interactive demo showcasing Cubby's primary and most distinguishing features.",
+      "tech": "ٍReact • Figma"
     }
   },
   "contact": {
