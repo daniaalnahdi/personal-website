@@ -62,7 +62,7 @@
     "project5": {
       "type": "Web App",
       "name": "Security Council Database",
-      "description": "For my Database Design class, my team created a database using data from the United Nations with the goal of making information on global issues more accessible. To demonstrate our work, I coded and deployed this full-stack, online directory, which included creating an API.",
+      "description": "For my database course, my team created a database of United Nations data with the goal of making information on global issues more accessible. To demonstrate our work, I coded and deployed this full-stack, online directory, which included creating an API.",
       "tech": "React • Node.js • MySQL"
     },
     "project6": {
