@@ -33,11 +33,17 @@ export const Utils = (() => {
     };
   };
 
+  //Gets the current year
+  const getYear = () => {
+    return new Date().getFullYear();
+  };
+
   return {
     isMobile,
     disableScroll,
     enableScroll,
     debounce,
+    getYear,
   };
 })();
 
@@ -311,6 +317,24 @@ export const Transitions = (() => {
     window.addEventListener('resize', Utils.debounce(revealElementOnScroll));
     window.addEventListener('resize', Utils.debounce(scaleCardsOnScroll));
     window.addEventListener('DOMContentLoaded', revealFirstElement);
+  };
+
+  return {
+    init: setUpEventListeners,
+  };
+})();
+
+export const Footer = (() => {
+  const copyrightYear = document.querySelector('#footer-copyright-year');
+
+  //Appends the year to the copyright text in the footer
+  const addCopyrightYear = () => {
+    const currentYear = document.createTextNode(Utils.getYear());
+    copyrightYear.appendChild(currentYear);
+  };
+
+  const setUpEventListeners = () => {
+    window.addEventListener('DOMContentLoaded', addCopyrightYear);
   };
 
   return {

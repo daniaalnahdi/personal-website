@@ -1,5 +1,5 @@
 import { Translator } from './js/translator';
-import { NavStates, NavLinks, Transitions } from './js/modules';
+import { NavStates, NavLinks, Footer, Transitions } from './js/modules';
 import { FontAwesome } from './js/vendors';
 import './assets/images/favicon.png';
 import './scss/main.scss';
@@ -9,7 +9,6 @@ import './scss/main.scss';
   Translator.init();
   NavStates.init();
   NavLinks.init();
+  Footer.init();
   Transitions.init();
 })();
-
-document.addEventListener('DOMContentLoaded', app);
