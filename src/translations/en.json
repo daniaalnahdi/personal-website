@@ -14,7 +14,7 @@
       "code": {
         "1": "JavaScript",
         "2": "React",
-        "3": "CSS/SCSS"
+        "3": "TypeScript"
       },
       "design": {
         "1": "Figma",
@@ -22,9 +22,9 @@
         "3": "Adobe Illustrator"
       },
       "concepts": {
-        "1": "Object-Oriented Design",
+        "1": "Design Thinking",
         "2": "UX/UI Design",
-        "3": "Design Thinking"
+        "3": "Human-Computer Interaction"
       },
       "tools": {
         "1": "Git & GitHub",
