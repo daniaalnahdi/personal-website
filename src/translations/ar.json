@@ -6,7 +6,7 @@
   "about": {
     "heading": "نبذة عني",
     "bio": {
-      "1": "أنا دانية النهدي، مطورة ويب بحرينية في مدينة بوسطن في الولايات المتحدة. أنا مهتمة بتطوير الويب والبرامج، خصيصاً واجهات المستخدم التفاعلية والجذابة.",
+      "1": "أنا دانية النهدي، مطورة ويب بحرينية في مدينة بوسطن في الولايات المتحدة. أنا مهتمة بتطوير الويب والبرامج المبتكرة، خصيصاً واجهات المستخدم التفاعلية والجذابة.",
       "2": "حصلت على درجة البكالوريوس في علوم الكمبيوتر والتصميم من <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a>، والآن أسعى للحصول على درجة الماجستير في الإبتكار و الإدارة الهندسية في <a href='https://www.tufts.edu/' target='_blank' rel='noopener noreferrer'>Tufts University</a>.  بفضل حصصي الدراسية وخبراتي العملية في <a href='https://www.cargurus.com/' target='_blank' rel='noopener noreferrer'>CarGurus</a> و <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> و <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>، بالإضافة إلى تصفحي الدائم للويب، أستكشف دائمًا مهارات جديدة من عالمي التطوير والتصميم.",
       "3": "بعيداً عن البرمجة والتصميم، أحب أن أقضي وقت فراغي في التطلع على القضايا الإنسانية التي تهمني، وإستكشاف أكلات نباتية جديدة، واللعب مع قطتي."
     },
@@ -14,7 +14,7 @@
       "code": {
         "1": "JavaScript",
         "2": "React",
-        "3": "CSS/SCSS"
+        "3": "ُTypeScript"
       },
       "design": {
         "1": "Figma",
@@ -22,9 +22,9 @@
         "3": "Adobe Illustrator"
       },
       "concepts": {
-        "1": "برمجة كائنية التوجه",
+        "1": "التفكير التصميمي",
         "2": "تصميم واجهة وتجربة المستخدم",
-        "3": "التفكير التصميمي"
+        "3": "االتفاعل بين الإنسان والحاسوب"
       },
       "tools": {
         "1": "Git & GitHub",
@@ -70,6 +70,18 @@
       "name": "Cubby",
       "description": "مشروعي الجامعي، والذي توّج إكمالي لمواد تصميم الواجهات، هو نظام لإدارة التعلم عن بعد مخصص للطلاب بين ٥-٧ سنوات. كوني مطورة  ضمن فريقي، برمجت عرض توضيحي وتفاعلي لأجل عرض ميزات نظامنا الأساسية والأكثر تميزاً.",
       "tech": "ٍReact • Figma"
+    },
+    "project7": {
+      "type": "تطبيق موبايل + تصميم",
+      "name": "Saltwater Classroom",
+      "description": "هذا المشروع هو تطبيق موبايل يهدف لتعليم الأطفال عن علوم المحيطات وأهمية الحفاظ عليها لأجل المنظمة الغير ربحية <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer' lang='en'>Saltwater Classroom</a>. شاركت في تصميم وبناء واجهة المستخدم كعضوة في استوديو التصميم الذي يقوده الطلاب في جامعة (نورث إيسترن)   <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer' lang='en'> Scout</a>.",
+      "tech": "React Native • Expo • Figma"
+    },
+    "project8": {
+      "type": "تصوير البيانات",
+      "name": "تصوير بيانات الخريجين",
+      "description": "في صفي المخصص لخدمة المجتمع، طورت موقع ويب لتصوير البيانات من <a href='https://masspromise.sites.northeastern.edu/' target='_blank' rel='noopener noreferrer' lang='en'>Massachusetts Promise Fellowship</a> التابعة لمنظمة <span lang='en'>AmeriCorps</span>. الرسومات البيانة التفعالية متصلة ببعضها من خلال خاصية التصفية.",
+      "tech": "JS • D3.js"
     }
   },
   "contact": {

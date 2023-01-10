@@ -6,7 +6,7 @@
   "about": {
     "heading": "About Me",
     "bio": {
-      "1": "I’m Dania Alnahdi, a Boston-based frontend developer from Bahrain. I’m interested in web and software development, innovative and human-centered technology, and interactive (and pretty) user interfaces.",
+      "1": "I’m Dania Alnahdi, a Boston-based web developer from Bahrain with a focus on design and product. I’m passionate about web and software development, innovative and human-centered technology, and interactive (and pretty) user interfaces.",
       "2": "I graduated with a BS in Computer Science and Design from <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a>, and I'm currently pursuing an MS in Innovation and Management at <a href='https://www.tufts.edu/' target='_blank' rel='noopener noreferrer'>Tufts University</a>. Thanks to my academic coursework, industry experience at <a href='https://www.cargurus.com/' target='_blank' rel='noopener noreferrer'>CarGurus</a>, <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a>, and <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>, and the numerious internet rabbit holes I tumble into, I’m always exploring new skills from both the development and design worlds.",
       "3": "When I’m not behind my computer, you’ll likely find me advocating for causes I’m passionate about, discovering plant-based food joints, or petting my cat."
     },
@@ -14,7 +14,7 @@
       "code": {
         "1": "JavaScript",
         "2": "React",
-        "3": "CSS/SCSS"
+        "3": "TypeScript"
       },
       "design": {
         "1": "Figma",
@@ -22,9 +22,9 @@
         "3": "Adobe Illustrator"
       },
       "concepts": {
-        "1": "Object-Oriented Design",
+        "1": "Design Thinking",
         "2": "UX/UI Design",
-        "3": "Design Thinking"
+        "3": "Human-Computer Interaction"
       },
       "tools": {
         "1": "Git & GitHub",
@@ -70,6 +70,18 @@
       "name": "Cubby",
       "description": "My Interaction Design senior capstone: a learning management system designed for students ages 5-7 in remote and hybrid classes. As a developer on my team, I worked on a live, interactive demo showcasing Cubby's primary and most distinguishing features.",
       "tech": "ٍReact • Figma"
+    },
+    "project7": {
+      "type": "Mobile App + Design",
+      "name": "Saltwater Classroom",
+      "description": "An educational mobile app for kids to learn about ocean conservation, created for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>. I collaborated on designing and building the frontend as a part of <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer'> Scout</a>, Northeastern University's student-led design studio.",
+      "tech": "React Native • Expo • Figma"
+    },
+    "project8": {
+      "type": "Data Viz",
+      "name": "Alumni Data Visualizations",
+      "description": "In my service-learning course, I led the development of information visualizations for the <a href='https://masspromise.sites.northeastern.edu/' target='_blank' rel='noopener noreferrer'>Massachusetts Promise Fellowship</a>, an AmeriCorps organization. The interactive graphs are connected via two-way brushing and linking for advanced filtering.",
+      "tech": "JS • D3.js"
     }
   },
   "contact": {
