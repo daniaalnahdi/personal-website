@@ -70,6 +70,12 @@
       "name": "Cubby",
       "description": "مشروعي الجامعي، والذي توّج إكمالي لمواد تصميم الواجهات، هو نظام لإدارة التعلم عن بعد مخصص للطلاب بين ٥-٧ سنوات. كوني مطورة  ضمن فريقي، برمجت عرض توضيحي وتفاعلي لأجل عرض ميزات نظامنا الأساسية والأكثر تميزاً.",
       "tech": "ٍReact • Figma"
+    },
+    "project7": {
+      "type": "تطبيق موبايل + تصميم",
+      "name": "Saltwater Classroom",
+      "description": "هذا المشروع هو تطبيق موبايل يهدف لتعليم الأطفال عن علوم المحيطات وأهمية الحفاظ عليها لأجل المنظمة الغير ربحية <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer' lang='en'>Saltwater Classroom</a>. شاركت في تصميم وبناء واجهة المستخدم كعضوة في استوديو التصميم الذي يقوده الطلاب في جامعة (نورث إيسترن)   <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer' lang='en'> Scout</a>.",
+      "tech": "React Native • Expo • Figma"
     }
   },
   "contact": {
