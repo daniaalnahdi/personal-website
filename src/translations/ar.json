@@ -76,6 +76,12 @@
       "name": "Saltwater Classroom",
       "description": "هذا المشروع هو تطبيق موبايل يهدف لتعليم الأطفال عن علوم المحيطات وأهمية الحفاظ عليها لأجل المنظمة الغير ربحية <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer' lang='en'>Saltwater Classroom</a>. شاركت في تصميم وبناء واجهة المستخدم كعضوة في استوديو التصميم الذي يقوده الطلاب في جامعة (نورث إيسترن)   <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer' lang='en'> Scout</a>.",
       "tech": "React Native • Expo • Figma"
+    },
+    "project8": {
+      "type": "تصوير البيانات",
+      "name": "تصوير بيانات الخريجين",
+      "description": "في صفي المخصص لخدمة المجتمع، طورت موقع ويب لتصوير البيانات من <a href='https://masspromise.sites.northeastern.edu/' target='_blank' rel='noopener noreferrer' lang='en'>Massachusetts Promise Fellowship</a> التابعة لمنظمة <span lang='en'>AmeriCorps</span>. الرسومات البيانة التفعالية متصلة ببعضها من خلال خاصية التصفية.",
+      "tech": "JS • D3.js"
     }
   },
   "contact": {

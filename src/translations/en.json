@@ -76,6 +76,12 @@
       "name": "Saltwater Classroom",
       "description": "An educational mobile app for kids to learn about ocean conservation, created for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>. I collaborated on designing and building the frontend as a part of <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer'> Scout</a>, Northeastern University's student-led design studio.",
       "tech": "React Native • Expo • Figma"
+    },
+    "project8": {
+      "type": "Data Viz",
+      "name": "Alumni Data Visualizations",
+      "description": "In my service-learning course, I led the development of information visualizations for the <a href='https://masspromise.sites.northeastern.edu/' target='_blank' rel='noopener noreferrer'>Massachusetts Promise Fellowship</a>, an AmeriCorps organization. The interactive graphs are connected via two-way brushing and linking for advanced filtering.",
+      "tech": "JS • D3.js"
     }
   },
   "contact": {
