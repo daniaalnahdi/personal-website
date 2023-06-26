@@ -38,7 +38,7 @@
     "project1": {
       "type": "Web App",
       "name": "OneASICS",
-      "description": "During my <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> co-op, I primarily worked on OneASICS: the authentication portal used across ASICS' fitness and e-commerce apps. My biggest task was updating the registration's interface and error handling logic, decreasing user errors by 37%.",
+      "description": "During my <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> co-op, I worked on OneASICS: the authentication portal used across ASICS' fitness and e-commerce apps. My main task was updating the registration's interface and error handling logic, decreasing user errors by 37%.",
       "tech": "JS • CSS • Google Optimize"
     },
     "project2": {
@@ -66,15 +66,15 @@
       "tech": "React • Node.js • MySQL"
     },
     "project6": {
-      "type": "Research + Design + Web App",
+      "type": "Web App + UX Research + UI Design",
       "name": "Cubby",
-      "description": "My Interaction Design senior capstone: a learning management system designed for students ages 5-7 in remote and hybrid classes. As a developer on my team, I worked on a live, interactive demo showcasing Cubby's primary and most distinguishing features.",
+      "description": "A social-emotional learning digital classroom designed for students ages 5-7 in remote and hybrid classes.",
       "tech": "ٍReact • Figma"
     },
     "project7": {
-      "type": "Mobile App + Design",
+      "type": "Mobile App + UX Research + UI Design",
       "name": "Saltwater Classroom",
-      "description": "An educational mobile app for kids to learn about ocean conservation, created for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>. I collaborated on designing and building the frontend as a part of <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer'> Scout</a>, Northeastern University's student-led design studio.",
+      "description": "An educational mobile app for kids to learn about ocean conservation, created for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>.",
       "tech": "React Native • Expo • Figma"
     },
     "project8": {
