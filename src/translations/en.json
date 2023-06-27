@@ -1,14 +1,14 @@
 {
   "intro": {
     "heading": "Hi, I’m Dania!",
-    "subheading": "Developer + Designer"
+    "subheading": "Developer & Designer"
   },
   "about": {
     "heading": "About Me",
     "bio": {
-      "1": "I’m Dania Alnahdi, a Boston-based web developer from Bahrain with a focus on design and product. I’m passionate about web and software development, innovative and human-centered technology, and interactive (and pretty) user interfaces.",
-      "2": "I graduated with a BS in Computer Science and Design from <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a>, and I'm currently pursuing an MS in Innovation and Management at <a href='https://www.tufts.edu/' target='_blank' rel='noopener noreferrer'>Tufts University</a>. Thanks to my academic coursework, industry experience at <a href='https://www.cargurus.com/' target='_blank' rel='noopener noreferrer'>CarGurus</a>, <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a>, and <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>, and the numerious internet rabbit holes I tumble into, I’m always exploring new skills from both the development and design worlds.",
-      "3": "When I’m not behind my computer, you’ll likely find me advocating for causes I’m passionate about, discovering plant-based food joints, or petting my cat."
+      "1": "I’m Dania Alnahdi, a Boston-based software engineer from Bahrain with a focus on design and product. I’m passionate about solving user experience challenges, designing innovative and human-centered solutions, and building interactive (and pretty!) user interfaces.",
+      "2": "I graduated with a BS in Computer Science and Design from <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a>, and an MS in Innovation and Management at <a href='https://www.tufts.edu/' target='_blank' rel='noopener noreferrer'>Tufts University</a>. Thanks to my academic coursework, industry experiences, and the numerious internet rabbit holes I tumble into, I'm constantly learning new skills from the development, design, and business worlds.",
+      "3": "When I’m not behind my computer, you’ll likely find me discovering new plant-based food joints or getting lost in a good book."
     },
     "skills": {
       "code": {
@@ -24,7 +24,7 @@
       "concepts": {
         "1": "Design Thinking",
         "2": "UX/UI Design",
-        "3": "Human-Computer Interaction"
+        "3": "Product Strategy"
       },
       "tools": {
         "1": "Git & GitHub",
@@ -36,46 +36,46 @@
   "projects": {
     "heading": "What I've Worked On",
     "project1": {
-      "type": "Web App",
-      "name": "OneASICS",
-      "description": "During my <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> co-op, I worked on OneASICS: the authentication portal used across ASICS' fitness and e-commerce apps. My main task was updating the registration's interface and error handling logic, decreasing user errors by 37%.",
-      "tech": "JS • CSS • Google Optimize"
-    },
-    "project2": {
-      "type": "Website",
-      "name": "Personal Website",
-      "description": "This very website! My goal was to create a responsive website from scratch using modern JavaScript tooling. I also added my own illustrations for a more personalized feel.",
-      "tech": "JS • SCSS • Webpack • Illustrator"
-    },
-    "project3": {
-      "type": "Web App",
-      "name": "Build for Black Lives",
-      "description": "An online platform that connects Black businesses and organizations to developers and creatives offering pro bono services. I was able to kickstart and collaborate on this initiative as an organizer for <a href='https://hackbeanpot.com/' target='_blank' rel='noopener noreferrer'>HackBeanpot</a>!",
-      "tech": "React • Airtable API"
-    },
-    "project4": {
-      "type": "Fullstack Web App",
-      "name": "Eco Eateries",
-      "description": "This winning hackathon project is a goal-tracker for restaurants to adopt sustainable business practices. As the only frontend developer on the team, I was in charge of building the user interface, which included an interactive Kanban board.",
-      "tech": "React • Python • MySQL"
-    },
-    "project5": {
-      "type": "Fullstack Web App",
-      "name": "Security Council Database",
-      "description": "For my database course, my team created a database of United Nations data with the goal of making information on global issues more accessible. To demonstrate our work, I coded and deployed this full-stack, online directory, which included creating an API.",
-      "tech": "React • Node.js • MySQL"
-    },
-    "project6": {
       "type": "Web App + UX Research + UI Design",
       "name": "Cubby",
       "description": "A social-emotional learning digital classroom for young students.",
       "tech": "ٍReact • Figma"
     },
-    "project7": {
+    "project2": {
       "type": "Mobile App + UX Research + UI Design",
       "name": "Saltwater Classroom",
       "description": "An educational and social platform for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>.",
       "tech": "React Native • Expo • Figma"
+    },
+    "project3": {
+      "type": "Web App",
+      "name": "OneASICS",
+      "description": "During my <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> co-op, I worked on OneASICS: the authentication portal used across ASICS' fitness and e-commerce apps. My main task was updating the registration's interface and error handling logic, decreasing user errors by 37%.",
+      "tech": "JS • CSS • Google Optimize"
+    },
+    "project4": {
+      "type": "Website",
+      "name": "Personal Website",
+      "description": "This very website! My goal was to create a responsive website from scratch using modern JavaScript tooling. I also added my own illustrations for a more personalized feel.",
+      "tech": "JS • SCSS • Webpack • Illustrator"
+    },
+    "project5": {
+      "type": "Web App",
+      "name": "Build for Black Lives",
+      "description": "An online platform that connects Black businesses and organizations to developers and creatives offering pro bono services. I was able to kickstart and collaborate on this initiative as an organizer for <a href='https://hackbeanpot.com/' target='_blank' rel='noopener noreferrer'>HackBeanpot</a>!",
+      "tech": "React • Airtable API"
+    },
+    "project6": {
+      "type": "Fullstack Web App",
+      "name": "Eco Eateries",
+      "description": "This winning hackathon project is a goal-tracker for restaurants to adopt sustainable business practices. As the only frontend developer on the team, I was in charge of building the user interface, which included an interactive Kanban board.",
+      "tech": "React • Python • MySQL"
+    },
+    "project7": {
+      "type": "Fullstack Web App",
+      "name": "Security Council Database",
+      "description": "For my database course, my team created a database of United Nations data with the goal of making information on global issues more accessible. To demonstrate our work, I coded and deployed this full-stack, online directory, which included creating an API.",
+      "tech": "React • Node.js • MySQL"
     },
     "project8": {
       "type": "Data Viz",

@@ -324,6 +324,28 @@ export const Transitions = (() => {
   };
 })();
 
+export const Buttons = (() => {
+  const buttons = document.querySelectorAll('button');
+
+  //Opens the button's link in a new tab
+  const openButtonUrl = (button) => {
+    const url = button.getAttribute('data-url');
+    if (url) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  const setUpEventListeners = () => {
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => openButtonUrl(button));
+    });
+  };
+
+  return {
+    init: setUpEventListeners,
+  };
+})();
+
 export const Footer = (() => {
   const copyrightYear = document.querySelector('#footer-copyright-year');
 
