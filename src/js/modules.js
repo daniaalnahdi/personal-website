@@ -331,7 +331,7 @@ export const Buttons = (() => {
   const openButtonUrl = (button) => {
     const url = button.getAttribute('data-url');
     if (url) {
-      window.open(url, '_blank', 'noopener,noreferrer');
+      window.open(url, '_blank', 'noopener noreferrer');
     }
   };
 
