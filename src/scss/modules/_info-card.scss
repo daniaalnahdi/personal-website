@@ -128,6 +128,18 @@
   }
 }
 
+.info-card-spotlight {
+  height: 27em;
+
+  .info-content {
+    .info-heading {
+      h4 {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
 .rtl {
   .info-content {
     margin-right: 0;
@@ -138,33 +150,51 @@
 //Custom breakpoint
 @media (min-width: 450px) {
   .info-card {
-    height: 23em;
+    height: 25em;
+  }
+
+  .info-card-spotlight {
+    height: 21em;
   }
 }
 
 @media ($sm-screen) {
   .info-card {
     height: 29em;
+  }
 
-    .info-content {
-      font-size: 0.9rem;
-    }
+  .info-card-spotlight {
+    height: 24em;
+  }
 
-    .info-footer {
-      p {
-        font-size: 0.75rem;
-      }
+  .info-content {
+    font-size: 0.9rem;
+  }
+
+  .info-footer {
+    p {
+      font-size: 0.75rem;
     }
+  }
+}
+
+@media ($md-screen) {
+  .info-card-spotlight {
+    height: 20em;
   }
 }
 
 @media ($lg-screen) {
   .info-card {
     height: 26em;
+  }
 
-    .info-content {
-      font-size: 0.95rem;
-    }
+  .info-card-spotlight {
+    height: 20em;
+  }
+
+  .info-content {
+    font-size: 0.95rem;
   }
 }
 

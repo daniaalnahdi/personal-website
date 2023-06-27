@@ -54,13 +54,13 @@
       "tech": "React • Airtable API"
     },
     "project4": {
-      "type": "Web App",
+      "type": "Fullstack Web App",
       "name": "Eco Eateries",
       "description": "This winning hackathon project is a goal-tracker for restaurants to adopt sustainable business practices. As the only frontend developer on the team, I was in charge of building the user interface, which included an interactive Kanban board.",
       "tech": "React • Python • MySQL"
     },
     "project5": {
-      "type": "Web App",
+      "type": "Fullstack Web App",
       "name": "Security Council Database",
       "description": "For my database course, my team created a database of United Nations data with the goal of making information on global issues more accessible. To demonstrate our work, I coded and deployed this full-stack, online directory, which included creating an API.",
       "tech": "React • Node.js • MySQL"
@@ -68,13 +68,13 @@
     "project6": {
       "type": "Web App + UX Research + UI Design",
       "name": "Cubby",
-      "description": "A social-emotional learning digital classroom designed for students ages 5-7 in remote and hybrid classes.",
+      "description": "A social-emotional learning digital classroom for young students.",
       "tech": "ٍReact • Figma"
     },
     "project7": {
       "type": "Mobile App + UX Research + UI Design",
       "name": "Saltwater Classroom",
-      "description": "An educational mobile app for kids to learn about ocean conservation, created for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>.",
+      "description": "An educational and social platform for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>.",
       "tech": "React Native • Expo • Figma"
     },
     "project8": {
