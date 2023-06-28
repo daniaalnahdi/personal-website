@@ -14,6 +14,25 @@ section {
 
 #about-section {
   padding-bottom: 7em;
+
+  #about-bio-img {
+    @include section-img($about-img, 11em);
+    border-radius: 50%;
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #about-bio-img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      $accent-dark,
+      0.4
+    ); /* Adjust the color and opacity as needed */
+  }
 }
 
 #intro-section,
@@ -27,7 +46,7 @@ section {
 }
 
 #intro-section-img {
-  @include section-img($intro-img, $sm-img);
+  @include section-img($intro-img, $xs-img);
 }
 
 #contact-section-img {

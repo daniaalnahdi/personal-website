@@ -18,7 +18,7 @@ button,
 button:focus,
 button:active {
   margin: 0.8em;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 300;
@@ -47,6 +47,7 @@ button:hover {
 .center {
   display: flex;
   align-self: center;
+  align-items: center;
   justify-content: center;
 }
 
