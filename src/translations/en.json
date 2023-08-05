@@ -6,8 +6,8 @@
   "about": {
     "heading": "About Me",
     "bio": {
-      "1": "I’m Dania Alnahdi, a Boston-based software engineer from Bahrain with a focus on design and product. I’m passionate about solving user experience challenges, designing innovative and human-centered solutions, and building interactive (and pretty!) user interfaces.",
-      "2": "When I’m not behind my computer, you’ll likely find me discovering new plant-based food joints or getting lost in a good book."
+      "1": "I’m Dania Alnahdi, a Boston-based software developer from Bahrain with a focus on design and product. I’m passionate about solving user experience challenges, researching innovative and human-centered solutions, and building interactive (and pretty!) user interfaces.",
+      "2": "In my free time, I enjoy discovering new plant-based food joints, exploring entrepreneurial endeavors, or getting lost in a good book."
     },
     "skills": {
       "code": {
@@ -35,15 +35,15 @@
   "projects": {
     "heading": "What I've Worked On",
     "project1": {
-      "type": "Web App + UX Research + UI Design",
+      "type": "Web App + Research + UX/UI",
       "name": "Cubby",
-      "description": "A social-emotional learning digital classroom for young students.",
+      "description": "A learning management system for young students designed for social-emotional learning.",
       "tech": "ٍReact • Figma"
     },
     "project2": {
-      "type": "Mobile App + UX Research + UI Design",
+      "type": "Mobile App + Research + UX/UI",
       "name": "Saltwater Classroom",
-      "description": "An educational and social platform for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>.",
+      "description": "An educational and social platform on ocean conservation for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>.",
       "tech": "React Native • Expo • Figma"
     },
     "project3": {
