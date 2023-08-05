@@ -26,9 +26,9 @@
         "3": "Product Strategy"
       },
       "tools": {
-        "1": "Git & GitHub",
-        "2": "Full Stack Dev",
-        "3": "JAMstack"
+        "1": "Full Stack Dev",
+        "2": "JAMstack",
+        "3": "Git & GitHub"
       }
     }
   },

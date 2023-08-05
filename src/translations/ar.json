@@ -13,7 +13,7 @@
       "code": {
         "1": "JavaScript",
         "2": "React",
-        "3": "ُTypeScript"
+        "3": "TypeScript"
       },
       "design": {
         "1": "Figma",
@@ -26,9 +26,9 @@
         "3": "استراتيجية المنتج"
       },
       "tools": {
-        "1": "Git & GitHub",
-        "2": "تطوير ويب (فل ستاك)",
-        "3": "JAMstack"
+        "1": "تطوير ويب (فل ستاك)",
+        "2": "JAMstack",
+        "3": "Git & GitHub"
       }
     }
   },
