@@ -6,9 +6,8 @@
   "about": {
     "heading": "About Me",
     "bio": {
-      "1": "I’m Dania Alnahdi, a Boston-based web developer from Bahrain with a focus on design and product. I’m passionate about web and software development, innovative and human-centered technology, and interactive (and pretty) user interfaces.",
-      "2": "I graduated with a BS in Computer Science and Design from <a href='https://www.northeastern.edu' target='_blank' rel='noopener noreferrer'>Northeastern University</a>, and I'm currently pursuing an MS in Innovation and Management at <a href='https://www.tufts.edu/' target='_blank' rel='noopener noreferrer'>Tufts University</a>. Thanks to my academic coursework, industry experience at <a href='https://www.cargurus.com/' target='_blank' rel='noopener noreferrer'>CarGurus</a>, <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a>, and <a href='https://www.mfs.com/en-us/' target='_blank' rel='noopener noreferrer'>MFS</a>, and the numerious internet rabbit holes I tumble into, I’m always exploring new skills from both the development and design worlds.",
-      "3": "When I’m not behind my computer, you’ll likely find me advocating for causes I’m passionate about, discovering plant-based food joints, or petting my cat."
+      "1": "I’m Dania Alnahdi, a Boston-based software developer from Bahrain with a focus on design and product. I’m passionate about solving user experience challenges, researching innovative and human-centered solutions, and building interactive (and pretty!) user interfaces.",
+      "2": "In my free time, I enjoy discovering new plant-based food joints, exploring entrepreneurial endeavors, or getting lost in a good book."
     },
     "skills": {
       "code": {
@@ -24,7 +23,7 @@
       "concepts": {
         "1": "Design Thinking",
         "2": "UX/UI Design",
-        "3": "Human-Computer Interaction"
+        "3": "Product Strategy"
       },
       "tools": {
         "1": "Git & GitHub",
@@ -36,46 +35,46 @@
   "projects": {
     "heading": "What I've Worked On",
     "project1": {
-      "type": "Web App",
-      "name": "OneASICS",
-      "description": "During my <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> co-op, I primarily worked on OneASICS: the authentication portal used across ASICS' fitness and e-commerce apps. My biggest task was updating the registration's interface and error handling logic, decreasing user errors by 37%.",
-      "tech": "JS • CSS • Google Optimize"
+      "type": "Web App + Research + UX/UI",
+      "name": "Cubby",
+      "description": "A learning management system for young students designed for social-emotional learning.",
+      "tech": "ٍReact • Figma"
     },
     "project2": {
+      "type": "Mobile App + Research + UX/UI",
+      "name": "Saltwater Classroom",
+      "description": "An educational and social platform on ocean conservation for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>.",
+      "tech": "React Native • Expo • Figma"
+    },
+    "project3": {
+      "type": "Web App",
+      "name": "OneASICS",
+      "description": "During my <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> co-op, I worked on OneASICS: the authentication portal used across ASICS' fitness and e-commerce apps. My main task was updating the registration's interface and error handling logic, decreasing user errors by 37%.",
+      "tech": "JS • CSS • Google Optimize"
+    },
+    "project4": {
       "type": "Website",
       "name": "Personal Website",
       "description": "This very website! My goal was to create a responsive website from scratch using modern JavaScript tooling. I also added my own illustrations for a more personalized feel.",
       "tech": "JS • SCSS • Webpack • Illustrator"
     },
-    "project3": {
+    "project5": {
       "type": "Web App",
       "name": "Build for Black Lives",
       "description": "An online platform that connects Black businesses and organizations to developers and creatives offering pro bono services. I was able to kickstart and collaborate on this initiative as an organizer for <a href='https://hackbeanpot.com/' target='_blank' rel='noopener noreferrer'>HackBeanpot</a>!",
       "tech": "React • Airtable API"
     },
-    "project4": {
-      "type": "Web App",
+    "project6": {
+      "type": "Fullstack Web App",
       "name": "Eco Eateries",
       "description": "This winning hackathon project is a goal-tracker for restaurants to adopt sustainable business practices. As the only frontend developer on the team, I was in charge of building the user interface, which included an interactive Kanban board.",
       "tech": "React • Python • MySQL"
     },
-    "project5": {
-      "type": "Web App",
+    "project7": {
+      "type": "Fullstack Web App",
       "name": "Security Council Database",
       "description": "For my database course, my team created a database of United Nations data with the goal of making information on global issues more accessible. To demonstrate our work, I coded and deployed this full-stack, online directory, which included creating an API.",
       "tech": "React • Node.js • MySQL"
-    },
-    "project6": {
-      "type": "Research + Design + Web App",
-      "name": "Cubby",
-      "description": "My Interaction Design senior capstone: a learning management system designed for students ages 5-7 in remote and hybrid classes. As a developer on my team, I worked on a live, interactive demo showcasing Cubby's primary and most distinguishing features.",
-      "tech": "ٍReact • Figma"
-    },
-    "project7": {
-      "type": "Mobile App + Design",
-      "name": "Saltwater Classroom",
-      "description": "An educational mobile app for kids to learn about ocean conservation, created for nonprofit <a href='https://www.saltwaterclassroom.com/' target='_blank' rel='noopener noreferrer'> Saltwater Classroom</a>. I collaborated on designing and building the frontend as a part of <a href='https://scout.camd.northeastern.edu/' target='_blank' rel='noopener noreferrer'> Scout</a>, Northeastern University's student-led design studio.",
-      "tech": "React Native • Expo • Figma"
     },
     "project8": {
       "type": "Data Viz",

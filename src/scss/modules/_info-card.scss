@@ -21,6 +21,9 @@
   .info-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .info-grid-spotlight {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .info-card {
@@ -89,11 +92,11 @@
 
   .info-footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     p,
     span {
-      align-self: flex-end;
       text-align: center;
       text-transform: uppercase;
       font-size: 0.8rem;
@@ -125,6 +128,18 @@
   }
 }
 
+.info-card-spotlight {
+  height: 27em;
+
+  .info-content {
+    .info-heading {
+      h4 {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
 .rtl {
   .info-content {
     margin-right: 0;
@@ -135,33 +150,51 @@
 //Custom breakpoint
 @media (min-width: 450px) {
   .info-card {
-    height: 23em;
+    height: 25em;
+  }
+
+  .info-card-spotlight {
+    height: 22em;
   }
 }
 
 @media ($sm-screen) {
   .info-card {
     height: 29em;
+  }
 
-    .info-content {
-      font-size: 0.9rem;
-    }
+  .info-card-spotlight {
+    height: 24em;
+  }
 
-    .info-footer {
-      p {
-        font-size: 0.75rem;
-      }
+  .info-content {
+    font-size: 0.9rem;
+  }
+
+  .info-footer {
+    p {
+      font-size: 0.75rem;
     }
+  }
+}
+
+@media ($md-screen) {
+  .info-card-spotlight {
+    height: 20.5em;
   }
 }
 
 @media ($lg-screen) {
   .info-card {
     height: 26em;
+  }
 
-    .info-content {
-      font-size: 0.95rem;
-    }
+  .info-card-spotlight {
+    height: 20.5em;
+  }
+
+  .info-content {
+    font-size: 0.95rem;
   }
 }
 

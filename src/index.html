@@ -84,16 +84,20 @@
     <!-- About Section -->
     <section id="about-section">
       <div id="about-bio-container">
-        <div class="sm-heading-container fade-in">
+        <div class="sm-heading-container center fade-in">
           <h2 class="underline-md" data-translate="about-heading"></h2>
+          <span id="about-bio-img"></span>
         </div>
         <div class="p-body">
           <p class="fade-in" data-translate="about-bio-1"></p>
           <p class="fade-in" data-translate="about-bio-2"></p>
-          <p class="fade-in" data-translate="about-bio-3"></p>
+          <span class="center">
+            <button data-url="https://dania-website-files.s3.amazonaws.com/resume.pdf">
+              View Resumè</button>
+          </span>
         </div>
       </div>
-      <ul class="list-grid">
+      <!-- <ul class="list-grid">
         <li class="list-card fade-in">
           <div class="icon">
             <i class="fas fa-code"></i>
@@ -134,7 +138,7 @@
             <li lang="en" data-translate="about-skills-tools-3"></li>
           </ul>
         </li>
-      </ul>
+      </ul> -->
     </section>
   </div>
   <div class="container">
@@ -145,65 +149,82 @@
           <h2 class="underline-md" data-translate="projects-heading"></h2>
         </div>
       </div>
-      <ul class="info-grid">
+      <ul class="info-grid info-grid-spotlight">
         <li class="fade-in">
-          <div class="info-card">
+          <div class="info-card info-card-spotlight">
             <div class="info-body">
               <div class="info-content">
                 <label data-translate="projects-project1-type"></label>
                 <div class="info-heading">
-                  <h4 class="underline-sm no-lowercase" lang="en" data-translate="projects-project1-name"></h4>
+                  <h4 class="underline-md" lang="en" data-translate="projects-project1-name"></h4>
                 </div>
                 <p data-translate="projects-project1-description"></p>
               </div>
               <div class="info-links">
-                <a href="https://id.asics.com/register?" target="_blank" rel="noopener noreferrer">
+                <a href="https://cubbydemo.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <i class="fas fa-external-link-alt"></i>
                 </a>
-              </div>
-            </div>
-            <div class="info-footer">
-              <p data-translate="projects-project1-tech"></p>
-            </div>
-          </div>
-        </li>
-        <li class="fade-in">
-          <div class="info-card">
-            <div class="info-body">
-              <div class="info-content">
-                <label data-translate="projects-project2-type"></label>
-                <div class="info-heading">
-                  <h4 class="underline-sm" data-translate="projects-project2-name"></h4>
-                </div>
-                <p data-translate="projects-project2-description"></p>
-              </div>
-              <div class="info-links">
-                <a href="https://github.com/daniaalnahdi/personal-website" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.notion.so/Cubby-Process-Book-55afa0be18a8426c9e5207fd84ad7b22" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="far fa-file-alt"></i>
+                </a>
+                <a href="https://github.com/YZ-space/cubby_demo" target="_blank" rel="noopener noreferrer">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
             </div>
             <div class="info-footer">
+              <button data-url="https://daniaalnahdi.notion.site/Cubby-6aa54c42ec12445cb8f5d5853c1ba985?pvs=4">
+                Read Case Study</button>
+              <p data-translate="projects-project1-tech"></p>
+            </div>
+          </div>
+        </li>
+        <li class="fade-in">
+          <div class="info-card info-card-spotlight">
+            <div class="info-body">
+              <div class="info-content">
+                <label data-translate="projects-project2-type"></label>
+                <div class="info-heading">
+                  <h4 class="underline-md" lang="en" data-translate="projects-project2-name"></h4>
+                </div>
+                <p data-translate="projects-project2-description"></p>
+              </div>
+              <div class="info-links">
+                <a href="https://dania-website-files.s3.amazonaws.com/sc_demo.mp4" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fas fa-play-circle"></i>
+                </a>
+                <a href="https://scout.camd.northeastern.edu/case-studies/saltwater-classroom" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="far fa-file-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="info-footer">
+              <button
+                data-url="https://daniaalnahdi.notion.site/Saltwater-Classroom-a2ab5a121d0e4950bc0049ac91e24ad6?pvs=4">
+                Read Case Study</button>
               <p data-translate="projects-project2-tech"></p>
             </div>
           </div>
         </li>
+      </ul>
+      <span class="center underline-md hidden-md hidden-lg"></span>
+      <ul class="info-grid">
         <li class="fade-in">
           <div class="info-card">
             <div class="info-body">
               <div class="info-content">
                 <label data-translate="projects-project3-type"></label>
                 <div class="info-heading">
-                  <h4 class="underline-sm" lang="en" data-translate="projects-project3-name"></h4>
+                  <h4 class="underline-sm no-lowercase" lang="en" data-translate="projects-project3-name"></h4>
                 </div>
                 <p data-translate="projects-project3-description"></p>
               </div>
               <div class="info-links">
-                <a href="https://buildforblacklives.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://id.asics.com/register?" target="_blank" rel="noopener noreferrer">
                   <i class="fas fa-external-link-alt"></i>
-                </a>
-                <a href="https://github.com/HackBeanpot/build4blm" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-github"></i>
                 </a>
               </div>
             </div>
@@ -218,16 +239,12 @@
               <div class="info-content">
                 <label data-translate="projects-project4-type"></label>
                 <div class="info-heading">
-                  <h4 class="underline-sm" lang="en" data-translate="projects-project4-name"></h4>
+                  <h4 class="underline-sm" data-translate="projects-project4-name"></h4>
                 </div>
                 <p data-translate="projects-project4-description"></p>
               </div>
               <div class="info-links">
-                <a href="https://user-images.githubusercontent.com/33553341/134799465-eea5f57a-7eb2-4f01-92ff-30bde3d64055.mp4"
-                  target="_blank" rel="noopener noreferrer">
-                  <i class="fas fa-play-circle"></i>
-                </a>
-                <a href="https://github.com/daniaalnahdi/hftp-frontend" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/daniaalnahdi/personal-website" target="_blank" rel="noopener noreferrer">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -243,15 +260,15 @@
               <div class="info-content">
                 <label data-translate="projects-project5-type"></label>
                 <div class="info-heading">
-                  <h4 class="underline-sm" data-translate="projects-project5-name"></h4>
+                  <h4 class="underline-sm" lang="en" data-translate="projects-project5-name"></h4>
                 </div>
                 <p data-translate="projects-project5-description"></p>
               </div>
               <div class="info-links">
-                <a href="https://un-sec-council.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://buildforblacklives.com/" target="_blank" rel="noopener noreferrer">
                   <i class="fas fa-external-link-alt"></i>
                 </a>
-                <a href="https://github.com/daniaalnahdi/un-sec-council/" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/HackBeanpot/build4blm" target="_blank" rel="noopener noreferrer">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -272,14 +289,11 @@
                 <p data-translate="projects-project6-description"></p>
               </div>
               <div class="info-links">
-                <a href="https://cubbydemo.netlify.app/" target="_blank" rel="noopener noreferrer">
-                  <i class="fas fa-external-link-alt"></i>
+                <a href="https://github-production-user-asset-6210df.s3.amazonaws.com/33553341/249290080-c45902f0-6578-4326-96e5-3fd9fe14e4b3.mp4"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-play-circle"></i>
                 </a>
-                <a href="https://www.notion.so/Cubby-Process-Book-55afa0be18a8426c9e5207fd84ad7b22" target="_blank"
-                  rel="noopener noreferrer">
-                  <i class="far fa-file-alt"></i>
-                </a>
-                <a href="https://github.com/YZ-space/cubby_demo" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/daniaalnahdi/hftp-frontend" target="_blank" rel="noopener noreferrer">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
@@ -295,21 +309,16 @@
               <div class="info-content">
                 <label data-translate="projects-project7-type"></label>
                 <div class="info-heading">
-                  <h4
-                    class="underline-sm"
-                    lang="en"
-                    data-translate="projects-project7-name"
-                  ></h4>
+                  <h4 class="underline-sm" data-translate="projects-project7-name"></h4>
                 </div>
                 <p data-translate="projects-project7-description"></p>
               </div>
               <div class="info-links">
-                <a
-                  href="https://scout.camd.northeastern.edu/case-studies/saltwater-classroom"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="far fa-file-alt"></i>
+                <a href="https://un-sec-council.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com/daniaalnahdi/un-sec-council/" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
                 </a>
               </div>
             </div>
