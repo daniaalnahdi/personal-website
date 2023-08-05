@@ -72,6 +72,10 @@ section {
     margin: 0;
   }
 
+  #about-section {
+    padding-bottom: 0;
+  }
+
   #contact-section-img {
     @include section-img($contact-img, $sm-img);
   }
