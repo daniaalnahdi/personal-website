@@ -67,7 +67,7 @@
     "project6": {
       "type": "Fullstack Web App",
       "name": "Security Council Database",
-      "description": "For my database course, my team created a database of United Nations data with the goal of making information on global issues more accessible. To demonstrate our work, I coded and deployed this full-stack, online directory, which included creating an API.",
+      "description": "After building a database of United Nations data with my team, I expanded on the project by designing an API and coding and deploying a full-stack online directory, in line with our goal to make information on global issues more accessible.",
       "tech": "React • Node.js • MySQL"
     },
     "project7": {
