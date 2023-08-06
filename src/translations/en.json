@@ -53,34 +53,34 @@
       "tech": "JS • CSS • Google Optimize"
     },
     "project4": {
-      "type": "Website",
-      "name": "Personal Website",
-      "description": "This very website! My goal was to create a responsive website from scratch using modern JavaScript tooling. I also added my own illustrations for a more personalized feel.",
-      "tech": "JS • SCSS • Webpack • Illustrator"
-    },
-    "project5": {
       "type": "Web App",
       "name": "Build for Black Lives",
       "description": "An online platform that connects Black businesses and organizations to developers and creatives offering pro bono services. I was able to kickstart and collaborate on this initiative as an organizer for <a href='https://hackbeanpot.com/' target='_blank' rel='noopener noreferrer'>HackBeanpot</a>!",
       "tech": "React • Airtable API"
     },
-    "project6": {
+    "project5": {
       "type": "Fullstack Web App",
       "name": "Eco Eateries",
       "description": "This winning hackathon project is a goal-tracker for restaurants to adopt sustainable business practices. As the only frontend developer on the team, I was in charge of building the user interface, which included an interactive Kanban board.",
       "tech": "React • Python • MySQL"
     },
-    "project7": {
+    "project6": {
       "type": "Fullstack Web App",
       "name": "Security Council Database",
       "description": "For my database course, my team created a database of United Nations data with the goal of making information on global issues more accessible. To demonstrate our work, I coded and deployed this full-stack, online directory, which included creating an API.",
       "tech": "React • Node.js • MySQL"
     },
-    "project8": {
+    "project7": {
       "type": "Data Viz",
       "name": "Alumni Data Visualizations",
       "description": "In my service-learning course, I led the development of information visualizations for the <a href='https://masspromise.sites.northeastern.edu/' target='_blank' rel='noopener noreferrer'>Massachusetts Promise Fellowship</a>, an AmeriCorps organization. The interactive graphs are connected via two-way brushing and linking for advanced filtering.",
       "tech": "JS • D3.js"
+    },
+    "project8": {
+      "type": "Website",
+      "name": "Personal Website",
+      "description": "This very website! My goal was to create a responsive website from scratch using modern JavaScript tooling. I also added my own illustrations for a more personalized feel.",
+      "tech": "JS • SCSS • Webpack • Illustrator"
     }
   },
   "contact": {
