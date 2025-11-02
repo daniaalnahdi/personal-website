@@ -6,8 +6,8 @@
   "about": {
     "heading": "About Me",
     "bio": {
-      "1": "I’m Dania Alnahdi, a Boston-based software developer from Bahrain with a focus on design and product. I’m passionate about solving user experience challenges, researching innovative and human-centered solutions, and building interactive (and pretty!) user interfaces.",
-      "2": "In my free time, I enjoy discovering new plant-based food joints, exploring entrepreneurial endeavors, or getting lost in a good book."
+      "1": "I’m Dania Alnahdi, a US-based software engineer from Bahrain with a focus on design and product development. I’m passionate about solving user experience challenges, researching innovative and human-centered solutions, and building interactive (and pretty!) user interfaces.",
+      "2": "In my free time, I enjoy discovering new plant-based food joints or getting lost in a good book."
     },
     "skills": {
       "code": {
@@ -27,8 +27,8 @@
       },
       "tools": {
         "1": "Full Stack Dev",
-        "2": "JAMstack",
-        "3": "Git & GitHub"
+        "2": "JAM Stack",
+        "3": "AI Integrations"
       }
     }
   },
@@ -49,7 +49,7 @@
     "project3": {
       "type": "Web App",
       "name": "OneASICS",
-      "description": "During my <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a> co-op, I worked on OneASICS: the authentication portal used across ASICS' fitness and e-commerce apps. My main task was updating the registration's interface and error handling logic, decreasing user errors by 37%.",
+      "description": "At <a href='https://www.asicsdigital.com/' target='_blank' rel='noopener noreferrer'>ASICS Digital</a>, I worked on OneASICS: the authentication portal used across ASICS' fitness and e-commerce apps. My main task was updating the registration's interface and error handling logic, reducing user errors by 37%.",
       "tech": "JS • CSS • Google Optimize"
     },
     "project4": {
@@ -79,7 +79,7 @@
     "project8": {
       "type": "Website",
       "name": "Personal Website",
-      "description": "This very website! My goal was to create a responsive website from scratch using modern JavaScript tooling. I also added my own illustrations for a more personalized feel.",
+      "description": "This very website! My goal was to create a responsive website from scratch (and without AI!) using modern JavaScript tooling. I also added my own illustrations for a more personalized feel.",
       "tech": "JS • SCSS • Webpack • Illustrator"
     }
   },
